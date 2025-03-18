@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h1 class="mb-4">Admin Panel</h1>
+
+    <!-- Список пользователей -->
+    <h2>User List</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.age}"></td>
+            <td>
+                <a th:href="@{/admin/users/edit(id=${user.id})}" class="btn btn-primary btn-sm">Edit</a>
+                <form th:action="@{/admin/users/delete}" method="post" style="display: inline;">
+                    <input type="hidden" name="id" th:value="${user.id}">
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Форма добавления нового пользователя -->
+    <h2 class="mt-5">Add New User</h2>
+    <form th:action="@{/admin/users}" method="post" class="mb-5">
+        <div class="mb-3">
+            <input type="text" name="name" placeholder="Name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" name="email" placeholder="Email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <input type="number" name="age" placeholder="Age" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" name="password" placeholder="Password" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <select name="role" class="form-select" required>
+                <option value="ROLE_USER">User</option>
+                <option value="ROLE_ADMIN">Admin</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Add User</button>
+    </form>
+
+    <!-- Кнопка выхода -->
+    <form th:action="@{/logout}" method="post">
+        <button type="submit" class="btn btn-warning">Logout</button>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
