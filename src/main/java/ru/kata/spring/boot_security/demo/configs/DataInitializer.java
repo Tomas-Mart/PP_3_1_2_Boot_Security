@@ -1,4 +1,4 @@
-package ru.kata.spring.boot_security.demo.config;
+package ru.kata.spring.boot_security.demo.configs;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -26,7 +26,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         // Создание ролей, если они отсутствуют
         Role userRole = roleRepository.findByName("ROLE_USER").orElseGet(() -> {
             Role role = new Role();
