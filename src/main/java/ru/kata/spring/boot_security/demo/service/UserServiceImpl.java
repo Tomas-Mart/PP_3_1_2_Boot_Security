@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
         logger.info("Поиск пользователя по ID: {}", id);
         return userRepository.findById(id).orElseThrow(() -> {
             logger.error("Пользователь с ID {} не найден", id);
-            return new UserNotFoundException("Пользователь с ID " + id + " не найден");
+            throw new UserNotFoundException("Пользователь с ID " + id + " не найден");
         });
     }
 
@@ -76,14 +76,13 @@ public class UserServiceImpl implements UserService {
         logger.info("Пользователь с email {} успешно сохранен", user.getEmail());
     }
 
-
     @Override
     @Transactional
     public void updateUser(User user) {
         logger.info("Попытка обновления пользователя с ID: {}", user.getId());
         User existingUser = userRepository.findById(user.getId()).orElseThrow(() -> {
             logger.error("Пользователь с ID {} не найден", user.getId());
-            return new UserNotFoundException("Пользователь с ID " + user.getId() + " не найден");
+            throw new UserNotFoundException("Пользователь с ID " + user.getId() + " не найден");
         });
 
         if (user.getPassword() != null && !user.getPassword().isEmpty()) {
