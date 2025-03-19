@@ -23,36 +23,41 @@ public class AdminController {
         this.roleRepository = roleRepository;
     }
 
-    @GetMapping("/users")
-    public String getAllUsers(Model model) {
+    // Главная страница администратора
+    @GetMapping
+    public String adminPage(Model model) {
         model.addAttribute("users", userService.getAllUsers());
         return "admin";
     }
 
-    @PostMapping("/users")
+    // Сохранение нового пользователя
+    @PostMapping("/save")
     public String saveUser(@ModelAttribute("user") User user, @RequestParam("role") String role) {
         roleRepository.findByName(role).ifPresent(userRole -> user.setRoles(new HashSet<>(Collections.singleton(userRole))));
         userService.saveUser(user);
-        return "redirect:/admin/users";
+        return "redirect:/admin";
     }
 
-    @GetMapping("/users/edit")
+    // Форма редактирования пользователя
+    @GetMapping("/edit")
     public String editUserForm(@RequestParam("id") Long id, Model model) {
         User user = userService.getUserById(id);
         model.addAttribute("user", user);
         return "edit-user";
     }
 
-    @PostMapping("/users/edit")
+    // Обновление пользователя
+    @PostMapping("/edit")
     public String editUser(@ModelAttribute("user") User user, @RequestParam("role") String role) {
         roleRepository.findByName(role).ifPresent(userRole -> user.setRoles(new HashSet<>(Collections.singleton(userRole))));
         userService.updateUser(user);
-        return "redirect:/admin/users";
+        return "redirect:/admin";
     }
 
-    @PostMapping("/users/delete")
+    // Удаление пользователя
+    @PostMapping("/delete")
     public String deleteUser(@RequestParam("id") Long id) {
         userService.deleteUser(id);
-        return "redirect:/admin/users";
+        return "redirect:/admin";
     }
 }

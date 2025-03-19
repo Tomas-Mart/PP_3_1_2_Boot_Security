@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -13,7 +14,9 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @Entity
-@Table(name = "users")
+@Table(name = "users", uniqueConstraints = {@UniqueConstraint(columnNames = "email"), @UniqueConstraint(columnNames = "username")})
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +27,11 @@ public class User implements UserDetails {
     @Column(name = "name", nullable = false)
     private String name;
 
+    @NotBlank(message = "Имя пользователя обязательно для заполнения")
+    @Size(min = 2, max = 50, message = "Имя пользователя должно содержать от 2 до 50 символов")
+    @Column(name = "username", nullable = false, unique = true)
+    private String username;
+
     @NotBlank(message = "Электронная почта обязательна для заполнения")
     @Email(message = "Некорректный формат электронной почты")
     @Column(name = "email", nullable = false, unique = true)
@@ -32,7 +40,7 @@ public class User implements UserDetails {
     @Positive(message = "Возраст должен быть положительным числом")
     @Max(value = 120, message = "Возраст не может быть больше 120")
     @Column(name = "age", nullable = false)
-    private int age; // Добавлено поле age
+    private int age;
 
     @NotBlank(message = "Пароль обязателен для заполнения")
     @Column(name = "password", nullable = false)
@@ -42,17 +50,9 @@ public class User implements UserDetails {
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
-    // Геттеры и сеттеры (уже включены благодаря аннотации @Data из Lombok)
-
-    // Реализация методов UserDetails
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
-    }
-
-    @Override
-    public String getUsername() {
-        return email;
     }
 
     @Override

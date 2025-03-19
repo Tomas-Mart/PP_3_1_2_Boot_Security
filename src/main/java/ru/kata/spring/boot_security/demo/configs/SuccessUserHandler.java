@@ -13,15 +13,19 @@ import java.util.Set;
 
 @Component
 public class SuccessUserHandler implements AuthenticationSuccessHandler {
+
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
+        // Получаем роли пользователя
         Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
+
+        // Логика перенаправления в зависимости от роли
         if (roles.contains("ROLE_ADMIN")) {
-            response.sendRedirect("/admin/users");
+            response.sendRedirect("/admin"); // Перенаправление для администратора
         } else if (roles.contains("ROLE_USER")) {
-            response.sendRedirect("/user");
+            response.sendRedirect("/user"); // Перенаправление для обычного пользователя
         } else {
-            response.sendRedirect("/");
+            response.sendRedirect("/"); // Перенаправление для всех остальных
         }
     }
 }
