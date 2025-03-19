@@ -1652,3 +1652,9 @@ java.lang.Exception: Apparent connection leak detected
 2025-03-20 00:08:05 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-20 00:08:05 - HikariPool-3 - Shutdown initiated...
 2025-03-20 00:08:05 - HikariPool-3 - Shutdown completed.
+2025-03-20 01:59:46 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m3s209ms192µs500ns).
+2025-03-20 02:00:03 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 02:00:09 - Graceful shutdown complete
+2025-03-20 02:00:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 02:00:13 - HikariPool-1 - Shutdown initiated...
+2025-03-20 02:00:14 - HikariPool-1 - Shutdown completed.

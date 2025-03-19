@@ -21,11 +21,19 @@ public class WebSecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(auth -> auth.requestMatchers("/", "/login", "/static/**").permitAll()
-                .requestMatchers("/admin/**").hasRole("ADMIN")
-                .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
-                .anyRequest().authenticated()).formLogin(form -> form.loginPage("/login").successHandler(successUserHandler)
-                .permitAll()).logout(logout -> logout.logoutSuccessUrl("/login").permitAll());
+        http.authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/", "/index", "/login", "/register", "/static/**").permitAll()
+                        .requestMatchers("/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/user/**", "/user", "/user-details", "/edit-user").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers("/users").hasAnyRole("USER", "ADMIN")
+                        .anyRequest().authenticated())
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .successHandler(successUserHandler)
+                        .permitAll())
+                .logout(logout -> logout
+                        .logoutSuccessUrl("/login")
+                        .permitAll());
 
         return http.build();
     }
