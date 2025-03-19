@@ -17,8 +17,8 @@ import java.util.UUID;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@ActiveProfiles("test") // Используем профиль "test"
-@DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD) // Очистка контекста перед каждым тестом
+@ActiveProfiles("test")
+@DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
 public class SpringBootSecurityDemoApplicationTests {
 
 	@Autowired
@@ -29,7 +29,7 @@ public class SpringBootSecurityDemoApplicationTests {
 
 	@BeforeEach
 	void setUp() {
-		userRepository.deleteAll(); // Очистка базы данных перед каждым тестом
+		userRepository.deleteAll();
 	}
 
 	@Test
@@ -41,29 +41,25 @@ public class SpringBootSecurityDemoApplicationTests {
 	@Test
 	@Transactional
 	void testUserCreation() {
-		// Создаем уникальные данные для теста
 		String uniqueEmail = "test-" + UUID.randomUUID() + "@example.com";
 		String uniqueUsername = "testuser-" + UUID.randomUUID();
 
-		// Создаем нового пользователя
 		User newUser = new User();
+		newUser.setName("Test User");
 		newUser.setEmail(uniqueEmail);
 		newUser.setUsername(uniqueUsername);
-		newUser.setPassword("password123"); // Устанавливаем пароль
-		newUser.setAge(25); // Пример дополнительного поля
+		newUser.setPassword("password");
+		newUser.setAge(30);
 
-		// Сохраняем пользователя
 		userService.saveUser(newUser);
 
-		// Проверяем, что пользователь был сохранен
-		Optional<User> savedUserOptional = userRepository.findByEmail(uniqueEmail);
-		assertTrue(savedUserOptional.isPresent(), "Пользователь не был сохранен корректно");
+		Optional<User> savedUser = userRepository.findByEmail(uniqueEmail);
+		assertTrue(savedUser.isPresent(), "Пользователь не был сохранен корректно");
 
-		// Проверяем, что данные пользователя совпадают
-		User savedUser = savedUserOptional.get();
-		assertEquals(uniqueEmail, savedUser.getEmail(), "Email пользователя не совпадает");
-		assertEquals(uniqueUsername, savedUser.getUsername(), "Username пользователя не совпадает");
-		assertEquals("password123", savedUser.getPassword(), "Пароль пользователя не совпадает");
-		assertEquals(25, savedUser.getAge(), "Возраст пользователя не совпадает");
+		User saved = savedUser.get();
+		assertEquals(uniqueEmail, saved.getEmail(), "Email пользователя не совпадает");
+		assertEquals(uniqueUsername, saved.getUsername(), "Username пользователя не совпадает");
+		assertNotEquals("password", saved.getPassword(), "Пароль пользователя не должен совпадать с оригиналом (должен быть зашифрован)");
+		assertEquals(30, saved.getAge(), "Возраст пользователя не совпадает");
 	}
 }

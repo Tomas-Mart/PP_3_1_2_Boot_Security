@@ -34,44 +34,45 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional(readOnly = true)
     public List<User> getAllUsers() {
-        logger.info("Запрос на получение списка всех пользователей");
+        logger.info("Получение списка всех пользователей");
         return userRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public User getUserById(Long id) {
-        logger.info("Запрос на получение пользователя по ID: {}", id);
+        logger.info("Поиск пользователя по ID: {}", id);
         return userRepository.findById(id).orElseThrow(() -> {
             logger.error("Пользователь с ID {} не найден в методе getUserById", id);
-            return new UserNotFoundException("Пользователь с ID " + id + " не найден");
+            return  new UserNotFoundException("Пользователь с ID " + id + " не найден");
         });
     }
 
     @Override
     @Transactional
     public void saveUser(User user) {
-        logger.info("Запрос на сохранение пользователя с email: {}", user.getEmail());
+        logger.info("Попытка сохранения пользователя с email: {}", user.getEmail());
 
         if (userRepository.findByEmail(user.getEmail()).isPresent()) {
-            logger.error("Ошибка: Пользователь с email {} уже существует", user.getEmail());
+            logger.error("Пользователь с email {} уже существует", user.getEmail());
             throw new UserAlreadyExistsException("Пользователь с таким email уже существует");
         }
 
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        assignDefaultRole(user);
+        if (user.getName() == null || user.getName().isEmpty()) {
+            logger.error("Имя обязательно для заполнения");
+            throw new IllegalArgumentException("Имя обязательно для заполнения");
+        }
 
-        // Проверка и создание роли, если необходимо
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
         Role userRole = roleRepository.findByName("ROLE_USER").orElseGet(() -> {
             logger.info("Роль ROLE_USER не найдена, создание новой роли");
             Role newRole = new Role("ROLE_USER");
             return roleRepository.save(newRole);
         });
 
-        // Установка роли для пользователя
         user.setRoles(Collections.singleton(userRole));
 
-        // Сохранение пользователя
         userRepository.save(user);
         logger.info("Пользователь с email {} успешно сохранен", user.getEmail());
     }
@@ -79,17 +80,17 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public void updateUser(User user) {
-        logger.info("Запрос на обновление пользователя с ID: {}", user.getId());
-        User existingUser = userRepository.findById(user.getId()).orElseThrow(() -> {
-            logger.error("Пользователь с ID {} не найден в методе updateUser", user.getId());
-            return new UserNotFoundException("Пользователь с ID " + user.getId() + " не найден");
-        });
+        logger.info("Попытка обновления пользователя с ID: {}", user.getId());
+        User existingUser = userRepository.findById(user.getId())
+                .orElseThrow(() -> {
+                    logger.error("Пользователь с ID {} не найден", user.getId());
+                    return new UserNotFoundException("Пользователь с ID " + user.getId() + " не найден");
+                });
 
         if (user.getPassword() != null && !user.getPassword().isEmpty()) {
             existingUser.setPassword(passwordEncoder.encode(user.getPassword()));
             logger.info("Пароль пользователя с ID {} обновлен", user.getId());
         }
-
         existingUser.setName(user.getName());
         existingUser.setEmail(user.getEmail());
         existingUser.setAge(user.getAge());
@@ -101,7 +102,7 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public void deleteUser(Long id) {
-        logger.info("Запрос на удаление пользователя с ID: {}", id);
+        logger.info("Попытка удаления пользователя с ID: {}", id);
         if (!userRepository.existsById(id)) {
             logger.error("Пользователь с ID {} не найден в методе deleteUser", id);
             throw new UserNotFoundException("Пользователь с ID " + id + " не найден");
@@ -113,28 +114,14 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional(readOnly = true)
     public Optional<User> findByEmail(String email) {
-        logger.info("Запрос на поиск пользователя по email: {}", email);
+        logger.info("Поиск пользователя по email: {}", email);
         return userRepository.findByEmail(email);
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<User> findByUsername(String username) {
-        logger.info("Запрос на поиск пользователя по username: {}", username);
+        logger.info("Поиск пользователя по username: {}", username);
         return userRepository.findByUsername(username);
-    }
-
-    /**
-     * Назначает пользователю роль по умолчанию (ROLE_USER).
-     * Если роль не существует, создает её.
-     *
-     * @param user Пользователь, которому назначается роль.
-     */
-    private void assignDefaultRole(User user) {
-        Role userRole = roleRepository.findByName("ROLE_USER").orElseGet(() -> {
-            logger.info("Роль ROLE_USER не найдена в методе assignDefaultRole(), создание новой роли");
-            return roleRepository.save(new Role("ROLE_USER"));
-        });
-        user.setRoles(Collections.singleton(userRole));
     }
 }
