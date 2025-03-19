@@ -1658,3 +1658,45 @@ java.lang.Exception: Apparent connection leak detected
 2025-03-20 02:00:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-20 02:00:13 - HikariPool-1 - Shutdown initiated...
 2025-03-20 02:00:14 - HikariPool-1 - Shutdown completed.
+2025-03-20 02:01:03 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 16628 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-20 02:01:03 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-20 02:01:03 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 02:01:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 02:01:04 - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2025-03-20 02:01:05 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-03-20 02:01:05 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-20 02:01:05 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.configureContext(TomcatServletWebServerFactory.java:412)
+
+The following method did not exist:
+
+    'void org.apache.catalina.Context.addServletContainerInitializer(jakarta.servlet.ServletContainerInitializer, java.util.Set)'
+
+The calling method's class, org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory, was loaded from the following location:
+
+    jar:file:/C:/Users/Ami/.m2/repository/org/springframework/boot/spring-boot/3.4.3/spring-boot-3.4.3.jar!/org/springframework/boot/web/embedded/tomcat/TomcatServletWebServerFactory.class
+
+The called method's class, org.apache.catalina.Context, is available from the following locations:
+
+    jar:file:/C:/Users/Ami/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.102/tomcat-embed-core-9.0.102.jar!/org/apache/catalina/Context.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.catalina.Context: file:/C:/Users/Ami/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.102/tomcat-embed-core-9.0.102.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory and org.apache.catalina.Context
+
