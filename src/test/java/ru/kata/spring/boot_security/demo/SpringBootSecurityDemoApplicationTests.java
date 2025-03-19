@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @ActiveProfiles("test")
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
-public class SpringBootSecurityDemoApplicationTests {
+public class пSpringBootSecurityDemoApplicationTests {
 
 	@Autowired
 	private UserRepository userRepository;
