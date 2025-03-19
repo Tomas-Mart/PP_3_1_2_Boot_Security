@@ -81,7 +81,7 @@
 
         <!-- Hibernate JCache -->
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-jcache</artifactId>
             <version>6.6.8.Final</version>
         </dependency>

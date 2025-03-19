@@ -3,6 +3,7 @@ package ru.kata.spring.boot_security.demo.configs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import ru.kata.spring.boot_security.demo.model.Role;
@@ -15,6 +16,7 @@ import java.util.Collections;
 import java.util.HashSet;
 
 @Component
+@Profile("!test") // Инициализация данных не выполняется при активном профиле "test"
 public class DataInitializer implements CommandLineRunner {
     private static final Logger logger = LoggerFactory.getLogger(DataInitializer.class);
 
@@ -29,7 +31,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) {
+    public void run(String... args) throws Exception {
         logger.info("Инициализация данных...");
 
         // Создание ролей, если они отсутствуют
@@ -74,6 +76,7 @@ public class DataInitializer implements CommandLineRunner {
         } else {
             logger.info("Пользователь 'admin' уже существует");
         }
+
         logger.info("Инициализация данных завершена");
     }
 }

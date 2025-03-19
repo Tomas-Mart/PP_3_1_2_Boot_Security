@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
 import ru.kata.spring.boot_security.demo.model.User;
 import ru.kata.spring.boot_security.demo.repository.UserRepository;
@@ -13,12 +14,12 @@ import ru.kata.spring.boot_security.demo.service.UserService;
 import java.util.Optional;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
-class SpringBootSecurityDemoApplicationTests {
+@ActiveProfiles("test") // Используем профиль "test"
+@DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD) // Очистка контекста перед каждым тестом
+public class SpringBootSecurityDemoApplicationTests {
 
 	@Autowired
 	private UserRepository userRepository;
@@ -28,12 +29,7 @@ class SpringBootSecurityDemoApplicationTests {
 
 	@BeforeEach
 	void setUp() {
-		// Создание уникальных тестовых данных перед каждым тестом
-		User user = new User();
-		user.setEmail("unique-" + UUID.randomUUID() + "@example.com");
-		user.setUsername("user" + UUID.randomUUID());
-		// Установите остальные поля, если необходимо
-		userRepository.save(user);
+		userRepository.deleteAll(); // Очистка базы данных перед каждым тестом
 	}
 
 	@Test
@@ -45,19 +41,29 @@ class SpringBootSecurityDemoApplicationTests {
 	@Test
 	@Transactional
 	void testUserCreation() {
-		// Пример теста, который проверяет создание пользователя
+		// Создаем уникальные данные для теста
+		String uniqueEmail = "test-" + UUID.randomUUID() + "@example.com";
+		String uniqueUsername = "testuser-" + UUID.randomUUID();
+
+		// Создаем нового пользователя
 		User newUser = new User();
-		newUser.setEmail("test-" + UUID.randomUUID() + "@example.com");
-		newUser.setUsername("testuser" + UUID.randomUUID());
-		// Установите остальные поля, если необходимо
+		newUser.setEmail(uniqueEmail);
+		newUser.setUsername(uniqueUsername);
+		newUser.setPassword("password123"); // Устанавливаем пароль
+		newUser.setAge(25); // Пример дополнительного поля
+
+		// Сохраняем пользователя
 		userService.saveUser(newUser);
 
-		Optional<User> savedUserOptional = userRepository.findByEmail(newUser.getEmail());
+		// Проверяем, что пользователь был сохранен
+		Optional<User> savedUserOptional = userRepository.findByEmail(uniqueEmail);
 		assertTrue(savedUserOptional.isPresent(), "Пользователь не был сохранен корректно");
 
+		// Проверяем, что данные пользователя совпадают
 		User savedUser = savedUserOptional.get();
-		assertEquals(newUser.getEmail(), savedUser.getEmail(), "Email пользователя не совпадает");
-		assertEquals(newUser.getUsername(), savedUser.getUsername(), "Username пользователя не совпадает");
-		// Дополнительные проверки полей, если необходимо
+		assertEquals(uniqueEmail, savedUser.getEmail(), "Email пользователя не совпадает");
+		assertEquals(uniqueUsername, savedUser.getUsername(), "Username пользователя не совпадает");
+		assertEquals("password123", savedUser.getPassword(), "Пароль пользователя не совпадает");
+		assertEquals(25, savedUser.getAge(), "Возраст пользователя не совпадает");
 	}
 }
