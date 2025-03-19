@@ -19,7 +19,6 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService {
     private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
-
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
@@ -53,29 +52,35 @@ public class UserServiceImpl implements UserService {
     public void saveUser(User user) {
         logger.info("Попытка сохранения пользователя с email: {}", user.getEmail());
 
+        // Проверка на существование пользователя с таким email
         if (userRepository.findByEmail(user.getEmail()).isPresent()) {
             logger.error("Пользователь с email {} уже существует", user.getEmail());
             throw new RuntimeException("Пользователь с таким email уже существует");
         }
 
+        // Шифрование пароля
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
+        // Проверка и создание роли, если необходимо
         Role userRole = roleRepository.findByName("ROLE_USER").orElseGet(() -> {
             logger.info("Роль ROLE_USER не найдена, создание новой роли");
             Role newRole = new Role("ROLE_USER");
             return roleRepository.save(newRole);
         });
+
+        // Установка роли для пользователя
         user.setRoles(Collections.singleton(userRole));
 
+        // Сохранение пользователя
         userRepository.save(user);
         logger.info("Пользователь с email {} успешно сохранен", user.getEmail());
     }
+
 
     @Override
     @Transactional
     public void updateUser(User user) {
         logger.info("Попытка обновления пользователя с ID: {}", user.getId());
-
         User existingUser = userRepository.findById(user.getId()).orElseThrow(() -> {
             logger.error("Пользователь с ID {} не найден", user.getId());
             return new UserNotFoundException("Пользователь с ID " + user.getId() + " не найден");
@@ -85,12 +90,10 @@ public class UserServiceImpl implements UserService {
             existingUser.setPassword(passwordEncoder.encode(user.getPassword()));
             logger.info("Пароль пользователя с ID {} обновлен", user.getId());
         }
-
         existingUser.setName(user.getName());
         existingUser.setEmail(user.getEmail());
         existingUser.setAge(user.getAge());
         existingUser.setRoles(user.getRoles());
-
         userRepository.save(existingUser);
         logger.info("Пользователь с ID {} успешно обновлен", user.getId());
     }
@@ -99,12 +102,10 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public void deleteUser(Long id) {
         logger.info("Попытка удаления пользователя с ID: {}", id);
-
         if (!userRepository.existsById(id)) {
             logger.error("Пользователь с ID {} не найден", id);
             throw new UserNotFoundException("Пользователь с ID " + id + " не найден");
         }
-
         userRepository.deleteById(id);
         logger.info("Пользователь с ID {} успешно удален", id);
     }

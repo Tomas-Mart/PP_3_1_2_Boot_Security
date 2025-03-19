@@ -74,7 +74,6 @@ public class DataInitializer implements CommandLineRunner {
         } else {
             logger.info("Пользователь 'admin' уже существует");
         }
-
         logger.info("Инициализация данных завершена");
     }
 }
