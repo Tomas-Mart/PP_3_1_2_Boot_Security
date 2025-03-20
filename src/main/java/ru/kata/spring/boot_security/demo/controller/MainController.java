@@ -9,7 +9,12 @@ public class MainController {
     // Главная страница
     @GetMapping("/")
     public String index() {
-        return "index"; // Возвращает index.html
+        return "redirect:/index"; // Возвращает index.html
+    }
+
+    @GetMapping("/index")
+    public String homePage() {
+        return "index"; // Имя шаблона (home.html)
     }
 
     // Страница входа

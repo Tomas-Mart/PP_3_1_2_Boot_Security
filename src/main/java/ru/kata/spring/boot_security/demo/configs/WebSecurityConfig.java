@@ -21,19 +21,31 @@ public class WebSecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/", "/index", "/login", "/register", "/static/**").permitAll()
+        http
+                .authorizeHttpRequests(auth -> auth
+                        // Разрешаем доступ к корневому пути и статическим ресурсам для всех
+                        .requestMatchers("/", "/index", "/login", "/register", "/static/**", "/css/**", "/js/**", "/images/**").permitAll()
+                        // Доступ к админским страницам только для ADMIN
                         .requestMatchers("/admin/**").hasRole("ADMIN")
+                        // Доступ к пользовательским страницам для USER и ADMIN
                         .requestMatchers("/user/**", "/user", "/user-details", "/edit-user").hasAnyRole("USER", "ADMIN")
+                        // Доступ к списку пользователей для USER и ADMIN
                         .requestMatchers("/users").hasAnyRole("USER", "ADMIN")
-                        .anyRequest().authenticated())
+                        // Все остальные запросы требуют аутентификации
+                        .anyRequest().authenticated()
+                )
                 .formLogin(form -> form
-                        .loginPage("/login")
-                        .successHandler(successUserHandler)
-                        .permitAll())
+                        .loginPage("/login") // Страница входа
+                        .successHandler(successUserHandler) // Обработчик успешной аутентификации
+                        .permitAll() // Разрешаем доступ к странице входа всем
+                )
                 .logout(logout -> logout
-                        .logoutSuccessUrl("/login")
-                        .permitAll());
+                        .logoutSuccessUrl("/login") // Перенаправление после выхода
+                        .permitAll() // Разрешаем доступ к выходу всем
+                )
+                .exceptionHandling(exception -> exception
+                        .accessDeniedPage("/access-denied") // Страница для ошибки доступа (403)
+                );
 
         return http.build();
     }
