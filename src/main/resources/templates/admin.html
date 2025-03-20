@@ -34,15 +34,15 @@
         }
         .btn {
             display: inline-block;
-            padding: 0.5rem 1rem; /* Увеличил padding для одинакового размера */
+            padding: 0.5rem 1rem;
             font-size: 1rem;
             border-radius: 0.25rem;
             text-decoration: none;
             color: #fff;
             cursor: pointer;
-            margin: 0rem 0; /* Отступы между кнопками */
-            width: 220px; /* Фиксированная ширина для одинакового размера */
-            text-align: center; /* Выравнивание текста по центру */
+            margin: 0.5rem 0;
+            width: 220px;
+            text-align: center;
         }
         .btn-primary {
             background-color: #0d6efd;
@@ -82,8 +82,8 @@
         .button-container {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem; /* Отступ между кнопками */
-            margin-top: 1rem; /* Отступ сверху */
+            gap: 0.5rem;
+            margin-top: 1rem;
         }
     </style>
 </head>
@@ -99,8 +99,7 @@
             <th>Имя</th>
             <th>Email</th>
             <th>Возраст</th>
-            <th>Пароль</th>
-            <th>Роль</th>
+            <th>Роли</th>
             <th>Действия</th>
         </tr>
         </thead>
@@ -109,8 +108,7 @@
             <td th:text="${user.name}"></td>
             <td th:text="${user.email}"></td>
             <td th:text="${user.age}"></td>
-            <td th:text="${user.password}"></td>
-            <td th:text="${user.role}"></td>
+            <td th:text="${user.roles}"></td>
             <td>
                 <a th:href="@{/admin/users/edit(id=${user.id})}" class="btn btn-warning">Редактировать</a>
                 <form th:action="@{/admin/users/delete}" method="post" style="display: inline;">
@@ -150,7 +148,7 @@
         </div>
         <button type="submit" class="btn btn-success">Добавить пользователя</button>
     </form>
-    
+
     <!-- Кнопка выхода -->
     <div class="button-container">
         <form th:action="@{/logout}" method="post">

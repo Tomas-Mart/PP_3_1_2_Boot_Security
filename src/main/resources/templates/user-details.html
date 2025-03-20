@@ -2,36 +2,79 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
     <title>Детали пользователя</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        .details {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .details div {
+            margin-bottom: 1rem;
+        }
+        .details label {
+            font-weight: bold;
+            color: #333;
+        }
+        .details span {
+            color: #555;
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #0d6efd;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0b5ed7;
+        }
+    </style>
 </head>
 <body>
-<h2>Детали пользователя</h2>
-<div>
-    <label>ID:</label>
-    <span th:text="${user.id}">ID</span>
-</div>
-<div>
-    <label>Имя:</label>
-    <span th:text="${user.name}">Name</span>
-</div>
-<div>
-    <label>Имя пользователя:</label>
-    <span th:text="${user.username}">Username</span>
-</div>
-<div>
-    <label>Email:</label>
-    <span th:text="${user.email}">Email</span>
-</div>
-<div>
-    <label>Возраст:</label>
-    <span th:text="${user.age}">Age</span>
-</div>
-<div>
-    <label>Роли:</label>
-    <span th:text="${user.roles}">Roles</span>
-</div>
-<div>
-    <a th:href="@{/users}">Вернуться к списку пользователей</a>
+<div class="container">
+    <h2>Детали пользователя</h2>
+    <div class="details">
+        <div>
+            <label>ID:</label>
+            <span th:text="${user.id}"></span>
+        </div>
+        <div>
+            <label>Имя:</label>
+            <span th:text="${user.name}"></span>
+        </div>
+        <div>
+            <label>Имя пользователя:</label>
+            <span th:text="${user.username}"></span>
+        </div>
+        <div>
+            <label>Email:</label>
+            <span th:text="${user.email}"></span>
+        </div>
+        <div>
+            <label>Возраст:</label>
+            <span th:text="${user.age}"></span>
+        </div>
+        <div>
+            <label>Роли:</label>
+            <span th:text="${user.roles}"></span>
+        </div>
+    </div>
+    <a th:href="@{/users}" class="btn">Вернуться к списку пользователей</a>
 </div>
 </body>
 </html>

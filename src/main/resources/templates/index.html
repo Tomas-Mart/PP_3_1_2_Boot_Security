@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
-    <title>Welcome</title>
+    <title>Главная страница</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,14 +51,11 @@
 </head>
 <body>
 <div class="container">
-    <h1>Welcome to Index PAGE!</h1>
+    <h1>Добро пожаловать на главную страницу!</h1>
     <div class="d-grid">
-        <a th:href="@{/user}" class="btn btn-primary">Go to User Page</a>
-        <a th:href="@{/login}" class="btn btn-success">Login</a>
+        <a th:href="@{/user}" class="btn btn-primary">Перейти в личный кабинет</a>
+        <a th:href="@{/login}" class="btn btn-success">Войти</a>
     </div>
-    <form th:action="@{/logout}" method="post">
-        <button type="submit">Выйти</button>
-    </form>
 </div>
 </body>
 </html>

@@ -1,31 +1,88 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
     <title>Регистрация</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .form-control:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .btn {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-<h2>Регистрация нового пользователя</h2>
-<form th:action="@{/register}" method="post">
-    <div>
-        <label for="username">Имя пользователя:</label>
-        <input type="text" id="username" name="username" required>
+<div class="container">
+    <h2>Регистрация нового пользователя</h2>
+    <div class="card">
+        <form th:action="@{/register}" method="post">
+            <div>
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+        </form>
     </div>
-    <div>
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <button type="submit">Зарегистрироваться</button>
-</form>
-
-<!-- Кнопка выхода -->
-<form th:action="@{/logout}" method="post">
-    <button type="submit" class="btn btn-primary">Выйти</button>
-</form>
 </div>
 </body>
 </html>

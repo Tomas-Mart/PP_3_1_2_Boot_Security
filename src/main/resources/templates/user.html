@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
-    <title>User Page</title>
+    <title>Личный кабинет</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,17 +13,14 @@
             align-items: center;
             min-height: 100vh;
         }
-
         .container {
             width: 100%;
             max-width: 600px;
         }
-
         h1 {
             color: #333;
             margin-bottom: 1.5rem;
         }
-
         .card {
             background-color: #fff;
             border-radius: 8px;
@@ -31,17 +28,14 @@
             padding: 2rem;
             margin-bottom: 1.5rem;
         }
-
         .card p {
             margin: 0.5rem 0;
             font-size: 1.1rem;
             color: #555;
         }
-
         .card strong {
             color: #333;
         }
-
         .btn {
             padding: 0.75rem 1.5rem;
             font-size: 1rem;
@@ -52,7 +46,6 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
         .btn:hover {
             background-color: #e0a800;
         }
@@ -60,16 +53,13 @@
 </head>
 <body>
 <div class="container">
-    <h1>User Page</h1>
+    <h1>Личный кабинет</h1>
     <div class="card">
-        <p><strong>Name:</strong> <span th:text="${user.name}"></span></p>
+        <p><strong>Имя:</strong> <span th:text="${user.name}"></span></p>
         <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
     </div>
     <form th:action="@{/logout}" method="post">
-        <button type="submit" class="btn">Logout</button>
-    </form>
-    <form th:action="@{/logout}" method="post">
-        <button type="submit">Выйти</button>
+        <button type="submit" class="btn">Выйти</button>
     </form>
 </div>
 </body>
