@@ -1,5 +1,5 @@
-<ehcache xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://www.ehcache.org/ehcache.xsd">
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="schemas/ehcache.xsd">
     <cache name="users"
            maxEntriesLocalHeap="1000"
            timeToLiveSeconds="600"/>
