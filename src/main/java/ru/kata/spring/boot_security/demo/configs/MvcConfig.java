@@ -16,5 +16,6 @@ public class MvcConfig implements WebMvcConfigurer {
         registry.addViewController("/user").setViewName("user");
         registry.addViewController("/user-details").setViewName("user-details");
         registry.addViewController("/users").setViewName("users");
+        registry.addViewController("/access-denied").setViewName("access-denied"); // Добавлено для обработки ошибки 403
     }
 }
