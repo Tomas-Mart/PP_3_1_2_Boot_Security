@@ -28,4 +28,13 @@ public class Role implements GrantedAuthority {
     public String getAuthority() {
         return name;
     }
+
+    // Переопределение метода toString() для удобства отладки
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
