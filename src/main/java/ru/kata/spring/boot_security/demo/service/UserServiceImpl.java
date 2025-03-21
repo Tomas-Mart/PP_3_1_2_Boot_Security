@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
         logger.info("Поиск пользователя по ID: {}", id);
         return userRepository.findById(id)
                 .orElseThrow(() -> {
-                    logger.error("Пользователь с ID {} не найден", id);
+                    logger.error("Пользователь с ID {} не найден в методе getUserById", id);
                     return new UserNotFoundException("Пользователь с ID " + id + " не найден");
                 });
     }
@@ -83,7 +83,7 @@ public class UserServiceImpl implements UserService {
         logger.info("Попытка обновления пользователя с ID: {}", user.getId());
         User existingUser = userRepository.findById(user.getId())
                 .orElseThrow(() -> {
-                    logger.error("Пользователь с ID {} не найден", user.getId());
+                    logger.error("Пользователь с ID {} не найден в методе updateUser", user.getId());
                     return new UserNotFoundException("Пользователь с ID " + user.getId() + " не найден");
                 });
 
@@ -104,7 +104,7 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(Long id) {
         logger.info("Попытка удаления пользователя с ID: {}", id);
         if (!userRepository.existsById(id)) {
-            logger.error("Пользователь с ID {} не найден", id);
+            logger.error("Пользователь с ID {} не найден в методе deleteUser", id);
             throw new UserNotFoundException("Пользователь с ID " + id + " не найден");
         }
         userRepository.deleteById(id);
