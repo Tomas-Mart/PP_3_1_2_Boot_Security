@@ -42,10 +42,11 @@ public class UserServiceImpl implements UserService {
     @Transactional(readOnly = true)
     public User getUserById(Long id) {
         logger.info("Поиск пользователя по ID: {}", id);
-        return userRepository.findById(id).orElseThrow(() -> {
-            logger.error("Пользователь с ID {} не найден в методе getUserById", id);
-            return  new UserNotFoundException("Пользователь с ID " + id + " не найден");
-        });
+        return userRepository.findById(id)
+                .orElseThrow(() -> {
+                    logger.error("Пользователь с ID {} не найден", id);
+                    return new UserNotFoundException("Пользователь с ID " + id + " не найден");
+                });
     }
 
     @Override
@@ -65,14 +66,13 @@ public class UserServiceImpl implements UserService {
 
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
-        Role userRole = roleRepository.findByName("ROLE_USER").orElseGet(() -> {
-            logger.info("Роль ROLE_USER не найдена, создание новой роли");
-            Role newRole = new Role("ROLE_USER");
-            return roleRepository.save(newRole);
-        });
+        Role userRole = roleRepository.findByName("ROLE_USER")
+                .orElseGet(() -> {
+                    logger.info("Роль ROLE_USER не найдена, создание новой роли");
+                    return roleRepository.save(new Role("ROLE_USER"));
+                });
 
         user.setRoles(Collections.singleton(userRole));
-
         userRepository.save(user);
         logger.info("Пользователь с email {} успешно сохранен", user.getEmail());
     }
@@ -104,7 +104,7 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(Long id) {
         logger.info("Попытка удаления пользователя с ID: {}", id);
         if (!userRepository.existsById(id)) {
-            logger.error("Пользователь с ID {} не найден в методе deleteUser", id);
+            logger.error("Пользователь с ID {} не найден", id);
             throw new UserNotFoundException("Пользователь с ID " + id + " не найден");
         }
         userRepository.deleteById(id);
