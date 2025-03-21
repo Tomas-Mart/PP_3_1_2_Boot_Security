@@ -41,8 +41,11 @@
             color: #fff;
             cursor: pointer;
             margin: 0.5rem 0;
-            width: 220px;
             text-align: center;
+            width: 120px; /* Одинаковая ширина для всех кнопок */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+            transition: all 0.3s ease; /* Плавное изменение при наведении */
+            border: none;
         }
         .btn-primary {
             background-color: #0d6efd;
@@ -59,6 +62,8 @@
         }
         .btn:hover {
             opacity: 0.9;
+            transform: translateY(-2px); /* Эффект объемности при наведении */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Увеличенная тень при наведении */
         }
         .form-control, .form-select {
             width: 100%;
@@ -82,8 +87,12 @@
         .button-container {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 5px; /* Расстояние между кнопками */
             margin-top: 1rem;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 5px; /* Расстояние между кнопками */
         }
     </style>
 </head>
@@ -99,6 +108,7 @@
             <th>Имя</th>
             <th>Email</th>
             <th>Возраст</th>
+            <th>Пароль</th>
             <th>Роли</th>
             <th>Действия</th>
         </tr>
@@ -108,13 +118,16 @@
             <td th:text="${user.name}"></td>
             <td th:text="${user.email}"></td>
             <td th:text="${user.age}"></td>
+            <td th:text="${user.password}"></td>
             <td th:text="${user.roles}"></td>
             <td>
-                <a th:href="@{/admin/users/edit(id=${user.id})}" class="btn btn-warning">Редактировать</a>
-                <form th:action="@{/admin/users/delete}" method="post" style="display: inline;">
-                    <input type="hidden" name="id" th:value="${user.id}">
-                    <button type="submit" class="btn btn-danger">Удалить</button>
-                </form>
+                <div class="action-buttons">
+                    <a th:href="@{/admin/edit(id=${user.id})}" class="btn btn-warning">Редактировать</a>
+                    <form th:action="@{/admin/delete}" method="post" style="display: inline;">
+                        <input type="hidden" name="id" th:value="${user.id}">
+                        <button type="submit" class="btn btn-danger">Удалить</button>
+                    </form>
+                </div>
             </td>
         </tr>
         </tbody>
@@ -122,7 +135,7 @@
 
     <!-- Форма добавления нового пользователя -->
     <h2 class="mt-5">Добавить нового пользователя</h2>
-    <form th:action="@{/admin/users}" method="post" class="mb-5">
+    <form th:action="@{/admin/save}" method="post" class="mb-5">
         <div class="mb-3">
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" placeholder="Имя" class="form-control" required>
@@ -146,7 +159,7 @@
                 <option value="ROLE_ADMIN">Администратор</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-success">Добавить пользователя</button>
+        <button type="submit" class="btn btn-success">Добавить</button>
     </form>
 
     <!-- Кнопка выхода -->

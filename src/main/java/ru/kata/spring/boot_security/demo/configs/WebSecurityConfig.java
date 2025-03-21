@@ -23,28 +23,23 @@ public class WebSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        // Разрешаем доступ к корневому пути и статическим ресурсам для всех
                         .requestMatchers("/", "/index", "/login", "/register", "/static/**", "/css/**", "/js/**", "/images/**").permitAll()
-                        // Доступ к админским страницам только для ADMIN
                         .requestMatchers("/admin/**").hasRole("ADMIN")
-                        // Доступ к пользовательским страницам для USER и ADMIN
                         .requestMatchers("/user/**", "/user", "/user-details", "/edit-user").hasAnyRole("USER", "ADMIN")
-                        // Доступ к списку пользователей для USER и ADMIN
                         .requestMatchers("/users").hasAnyRole("USER", "ADMIN")
-                        // Все остальные запросы требуют аутентификации
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
-                        .loginPage("/login") // Страница входа
-                        .successHandler(successUserHandler) // Обработчик успешной аутентификации
-                        .permitAll() // Разрешаем доступ к странице входа всем
+                        .loginPage("/login")
+                        .successHandler(successUserHandler)
+                        .permitAll()
                 )
                 .logout(logout -> logout
-                        .logoutSuccessUrl("/login") // Перенаправление после выхода
-                        .permitAll() // Разрешаем доступ к выходу всем
+                        .logoutSuccessUrl("/login")
+                        .permitAll()
                 )
                 .exceptionHandling(exception -> exception
-                        .accessDeniedPage("/access-denied") // Страница для ошибки доступа (403)
+                        .accessDeniedPage("/access-denied")
                 );
 
         return http.build();

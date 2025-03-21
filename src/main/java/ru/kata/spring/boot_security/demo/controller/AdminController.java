@@ -3,6 +3,7 @@ package ru.kata.spring.boot_security.demo.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -25,11 +26,13 @@ public class AdminController {
 
     private final UserService userService;
     private final RoleRepository roleRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public AdminController(UserService userService, RoleRepository roleRepository) {
+    public AdminController(UserService userService, RoleRepository roleRepository, PasswordEncoder passwordEncoder) {
         this.userService = userService;
         this.roleRepository = roleRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @PreDestroy
@@ -55,6 +58,9 @@ public class AdminController {
     // Сохранение нового пользователя
     @PostMapping("/save")
     public String saveUser(@ModelAttribute("user") User user, @RequestParam("role") String role) {
+        // Хеширование пароля перед сохранением
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
         roleRepository.findByName(role).ifPresent(userRole -> user.setRoles(new HashSet<>(Collections.singleton(userRole))));
         userService.saveUser(user);
         return "redirect:/admin";
@@ -71,6 +77,9 @@ public class AdminController {
     // Обновление пользователя
     @PostMapping("/edit")
     public String editUser(@ModelAttribute("user") User user, @RequestParam("role") String role) {
+        // Хеширование пароля перед обновлением
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
         roleRepository.findByName(role).ifPresent(userRole -> user.setRoles(new HashSet<>(Collections.singleton(userRole))));
         userService.updateUser(user);
         return "redirect:/admin";
