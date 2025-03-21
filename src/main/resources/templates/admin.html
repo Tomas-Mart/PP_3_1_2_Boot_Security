@@ -106,6 +106,7 @@
         <thead>
         <tr>
             <th>Имя</th>
+            <th>Имя пользователя</th>
             <th>Email</th>
             <th>Возраст</th>
             <th>Пароль</th>
@@ -116,6 +117,7 @@
         <tbody>
         <tr th:each="user : ${users}">
             <td th:text="${user.name}"></td>
+            <td th:text="${user.username}"></td>
             <td th:text="${user.email}"></td>
             <td th:text="${user.age}"></td>
             <td th:text="${user.password}"></td>
@@ -139,6 +141,10 @@
         <div class="mb-3">
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" placeholder="Имя" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="username">Имя пользователя</label>
+            <input type="text" id="username" name="username" placeholder="Имя пользователя" class="form-control" required>
         </div>
         <div class="mb-3">
             <label for="email">Email</label>
