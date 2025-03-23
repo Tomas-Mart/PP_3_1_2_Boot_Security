@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>User Page</title>
+    <meta charset="UTF-8">
+    <title>Страница пользователя</title>
 </head>
 <body>
-<h1>User, welcome to your page!</h1>
-<a th:href="@{/logout}">Logout</a>
+<h1>Страница пользователя</h1>
+<p>Добро пожаловать, <span th:text="${#authentication.principal.username}"></span>!</p>
+<p>Ваши роли: <span th:text="${#authentication.principal.authorities}"></span></p>
+<a th:href="@{/logout}">Выйти</a>
+<a th:href="@{/}">На главную</a>
 </body>
 </html>
