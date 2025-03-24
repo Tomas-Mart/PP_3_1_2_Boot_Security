@@ -1231,3 +1231,2918 @@ java.lang.Exception: Apparent connection leak detected
 2025-03-24 05:33:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-24 05:33:04 - HikariPool-1 - Shutdown initiated...
 2025-03-24 05:33:04 - HikariPool-1 - Shutdown completed.
+2025-03-24 05:33:08 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 8020 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 05:33:08 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 05:33:08 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 05:33:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 05:33:09 - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2025-03-24 05:33:09 - Tomcat initialized with port 8080 (http)
+2025-03-24 05:33:09 - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-03-24 05:33:09 - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-03-24 05:33:09 - Starting service [Tomcat]
+2025-03-24 05:33:09 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24 05:33:10 - Initializing Spring embedded WebApplicationContext
+2025-03-24 05:33:10 - Root WebApplicationContext: initialization completed in 1406 ms
+2025-03-24 05:33:10 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 05:33:10 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 05:33:10 - HHH000026: Second-level cache disabled
+2025-03-24 05:33:10 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 05:33:10 - HikariPool-1 - Starting...
+2025-03-24 05:33:11 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cbf4f8c
+2025-03-24 05:33:11 - HikariPool-1 - Start completed.
+2025-03-24 05:33:11 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 05:33:12 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 05:33:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:33:13 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 05:33:13 - Adding welcome page template: index
+2025-03-24 05:33:13 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 05:33:13 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 05:33:13 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 05:33:13 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 05:33:13 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 05:33:14 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 05:33:14 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-24 05:33:14 - Started SpringBootSecurityDemoApplication in 6.062 seconds (process running for 7.274)
+2025-03-24 05:33:14 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 05:33:14 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 05:33:14 - Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕС‡РёС‰РµРЅР°.
+2025-03-24 05:33:14 - РќР°С‡Р°Р»Рѕ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґР°РЅРЅС‹С…...
+2025-03-24 05:33:14 - delete from users_roles where user_id=?
+2025-03-24 05:33:14 - delete from users_roles where user_id=?
+2025-03-24 05:33:14 - delete from users where id=?
+2025-03-24 05:33:14 - delete from users where id=?
+2025-03-24 05:33:14 - delete from roles where id=?
+2025-03-24 05:33:14 - delete from roles where id=?
+2025-03-24 05:33:14 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 05:33:14 - Р РѕР»СЊ ROLE_ADMIN РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 05:33:14 - insert into roles (name) values (?)
+2025-03-24 05:33:14 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 05:33:14 - Р РѕР»СЊ ROLE_USER РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 05:33:14 - insert into roles (name) values (?)
+2025-03-24 05:33:14 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 05:33:14 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: admin
+2025-03-24 05:33:14 - insert into users (password,username) values (?,?)
+2025-03-24 05:33:14 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ admin СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 05:33:14 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 05:33:14 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: user
+2025-03-24 05:33:14 - insert into users (password,username) values (?,?)
+2025-03-24 05:33:14 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ user СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 05:33:14 - РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С… Р·Р°РІРµСЂС€РµРЅР°.
+2025-03-24 05:33:14 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 05:33:14 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 05:33:14 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 05:33:14 - Session Metrics {
+    428500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2057500 nanoseconds spent preparing 14 JDBC statements;
+    21207900 nanoseconds spent executing 10 JDBC statements;
+    152878200 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6309400 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    4400400 nanoseconds spent executing 6 pre-partial-flushes;
+    191061000 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 05:43:31 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-24 05:43:31 - Initializing Servlet 'dispatcherServlet'
+2025-03-24 05:43:31 - Detected StandardServletMultipartResolver
+2025-03-24 05:43:31 - Detected AcceptHeaderLocaleResolver
+2025-03-24 05:43:31 - Detected FixedThemeResolver
+2025-03-24 05:43:31 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@552b7481
+2025-03-24 05:43:31 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e092ca
+2025-03-24 05:43:31 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-24 05:43:31 - Completed initialization in 1 ms
+2025-03-24 05:43:31 - Securing GET /login
+2025-03-24 05:43:31 - Secured GET /login
+2025-03-24 05:43:31 - GET "/login", parameters={}
+2025-03-24 05:43:31 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:43:31 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 05:43:32 - Completed 200 OK
+2025-03-24 05:43:32 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:43:34 - Securing GET /favicon.ico
+2025-03-24 05:43:34 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:43:34 - Redirecting to http://localhost:8080/login
+2025-03-24 05:43:34 - Securing GET /login
+2025-03-24 05:43:34 - Secured GET /login
+2025-03-24 05:43:34 - GET "/login", parameters={}
+2025-03-24 05:43:34 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:43:34 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 05:43:34 - Completed 200 OK
+2025-03-24 05:43:34 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:43:57 - Securing POST /login
+2025-03-24 05:43:57 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 05:43:57 - Session Metrics {
+    707200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    835900 nanoseconds spent preparing 1 JDBC statements;
+    771700 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:43:57 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: ru.kata.spring.boot_security.demo.models.User.roles: could not initialize proxy - no Session
+	at org.hibernate.collection.spi.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:635)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:219)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:614)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.read(AbstractPersistentCollection.java:138)
+	at org.hibernate.collection.spi.PersistentSet.iterator(PersistentSet.java:166)
+	at java.base/java.util.Spliterators$IteratorSpliterator.estimateSize(Spliterators.java:1865)
+	at java.base/java.util.Spliterator.getExactSizeIfKnown(Spliterator.java:414)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:508)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at ru.kata.spring.boot_security.demo.models.User.getAuthorities(User.java:42)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.createSuccessAuthentication(AbstractUserDetailsAuthenticationProvider.java:197)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(DaoAuthenticationProvider.java:141)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:168)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-03-24 05:43:57 - Securing POST /error
+2025-03-24 05:43:57 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:43:57 - Redirecting to http://localhost:8080/login
+2025-03-24 05:43:57 - Securing GET /login
+2025-03-24 05:43:57 - Secured GET /login
+2025-03-24 05:43:57 - GET "/login", parameters={}
+2025-03-24 05:43:57 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:43:57 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 05:43:57 - Completed 200 OK
+2025-03-24 05:43:57 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:43:57 - Securing GET /favicon.ico
+2025-03-24 05:43:57 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:43:57 - Redirecting to http://localhost:8080/login
+2025-03-24 05:43:57 - Securing GET /login
+2025-03-24 05:43:57 - Secured GET /login
+2025-03-24 05:43:57 - GET "/login", parameters={}
+2025-03-24 05:43:57 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:43:57 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 05:43:57 - Completed 200 OK
+2025-03-24 05:43:57 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:03 - Securing GET /
+2025-03-24 05:44:03 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:03 - Saved request http://localhost:8080/?continue to session
+2025-03-24 05:44:03 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:03 - Securing GET /login
+2025-03-24 05:44:03 - Secured GET /login
+2025-03-24 05:44:03 - GET "/login", parameters={}
+2025-03-24 05:44:03 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:03 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 05:44:03 - Completed 200 OK
+2025-03-24 05:44:03 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:03 - Securing GET /favicon.ico
+2025-03-24 05:44:03 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:03 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:03 - Securing GET /login
+2025-03-24 05:44:03 - Secured GET /login
+2025-03-24 05:44:03 - GET "/login", parameters={}
+2025-03-24 05:44:03 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:03 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 05:44:03 - Completed 200 OK
+2025-03-24 05:44:03 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:05 - Securing GET /
+2025-03-24 05:44:05 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:05 - Saved request http://localhost:8080/?continue to session
+2025-03-24 05:44:05 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:05 - Securing GET /login
+2025-03-24 05:44:05 - Secured GET /login
+2025-03-24 05:44:05 - GET "/login", parameters={}
+2025-03-24 05:44:05 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:05 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 05:44:05 - Completed 200 OK
+2025-03-24 05:44:05 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:05 - Securing GET /favicon.ico
+2025-03-24 05:44:05 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:05 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:05 - Securing GET /login
+2025-03-24 05:44:05 - Secured GET /login
+2025-03-24 05:44:05 - GET "/login", parameters={}
+2025-03-24 05:44:05 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:05 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 05:44:05 - Completed 200 OK
+2025-03-24 05:44:05 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:16 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24 05:44:16 - Graceful shutdown complete
+2025-03-24 05:44:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 05:44:16 - HikariPool-1 - Shutdown initiated...
+2025-03-24 05:44:16 - HikariPool-1 - Shutdown completed.
+2025-03-24 05:44:20 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 14384 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 05:44:20 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 05:44:20 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 05:44:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 05:44:21 - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2025-03-24 05:44:21 - Tomcat initialized with port 8080 (http)
+2025-03-24 05:44:21 - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-03-24 05:44:21 - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-03-24 05:44:21 - Starting service [Tomcat]
+2025-03-24 05:44:21 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24 05:44:22 - Initializing Spring embedded WebApplicationContext
+2025-03-24 05:44:22 - Root WebApplicationContext: initialization completed in 1425 ms
+2025-03-24 05:44:22 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 05:44:22 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 05:44:22 - HHH000026: Second-level cache disabled
+2025-03-24 05:44:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 05:44:22 - HikariPool-1 - Starting...
+2025-03-24 05:44:23 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eff6846
+2025-03-24 05:44:23 - HikariPool-1 - Start completed.
+2025-03-24 05:44:23 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 05:44:24 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 05:44:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 05:44:25 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 05:44:25 - Adding welcome page template: index
+2025-03-24 05:44:26 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 05:44:26 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 05:44:26 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 05:44:26 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 05:44:26 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 05:44:26 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 05:44:26 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-24 05:44:26 - Started SpringBootSecurityDemoApplication in 6.334 seconds (process running for 7.501)
+2025-03-24 05:44:26 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 05:44:26 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 05:44:26 - Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕС‡РёС‰РµРЅР°.
+2025-03-24 05:44:26 - РќР°С‡Р°Р»Рѕ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґР°РЅРЅС‹С…...
+2025-03-24 05:44:26 - delete from users_roles where user_id=?
+2025-03-24 05:44:26 - delete from users_roles where user_id=?
+2025-03-24 05:44:26 - delete from users where id=?
+2025-03-24 05:44:26 - delete from users where id=?
+2025-03-24 05:44:26 - delete from roles where id=?
+2025-03-24 05:44:26 - delete from roles where id=?
+2025-03-24 05:44:26 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 05:44:26 - Р РѕР»СЊ ROLE_ADMIN РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 05:44:26 - insert into roles (name) values (?)
+2025-03-24 05:44:26 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 05:44:26 - Р РѕР»СЊ ROLE_USER РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 05:44:26 - insert into roles (name) values (?)
+2025-03-24 05:44:26 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 05:44:26 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: admin
+2025-03-24 05:44:26 - insert into users (password,username) values (?,?)
+2025-03-24 05:44:26 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ admin СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 05:44:26 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 05:44:26 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: user
+2025-03-24 05:44:26 - insert into users (password,username) values (?,?)
+2025-03-24 05:44:26 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ user СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 05:44:26 - РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С… Р·Р°РІРµСЂС€РµРЅР°.
+2025-03-24 05:44:26 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 05:44:26 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 05:44:26 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 05:44:26 - Session Metrics {
+    656000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1316500 nanoseconds spent preparing 14 JDBC statements;
+    75390300 nanoseconds spent executing 10 JDBC statements;
+    31261400 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5346200 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    3490400 nanoseconds spent executing 6 pre-partial-flushes;
+    56682400 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 05:44:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-24 05:44:45 - Initializing Servlet 'dispatcherServlet'
+2025-03-24 05:44:45 - Detected StandardServletMultipartResolver
+2025-03-24 05:44:45 - Detected AcceptHeaderLocaleResolver
+2025-03-24 05:44:45 - Detected FixedThemeResolver
+2025-03-24 05:44:45 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@24244ea
+2025-03-24 05:44:45 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6a4f15bc
+2025-03-24 05:44:45 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-24 05:44:45 - Completed initialization in 2 ms
+2025-03-24 05:44:45 - Securing POST /login
+2025-03-24 05:44:45 - Invalid CSRF token found for http://localhost:8080/login
+2025-03-24 05:44:45 - Responding with 403 status code
+2025-03-24 05:44:45 - Securing POST /error
+2025-03-24 05:44:45 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:45 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:45 - Securing GET /login
+2025-03-24 05:44:45 - Secured GET /login
+2025-03-24 05:44:45 - GET "/login", parameters={}
+2025-03-24 05:44:45 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:45 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 05:44:45 - Completed 200 OK
+2025-03-24 05:44:45 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:45 - Securing GET /favicon.ico
+2025-03-24 05:44:45 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:45 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:45 - Securing GET /login
+2025-03-24 05:44:45 - Secured GET /login
+2025-03-24 05:44:45 - GET "/login", parameters={}
+2025-03-24 05:44:45 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:45 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 05:44:45 - Completed 200 OK
+2025-03-24 05:44:45 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:48 - Securing GET /
+2025-03-24 05:44:48 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:48 - Saved request http://localhost:8080/?continue to session
+2025-03-24 05:44:48 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:48 - Securing GET /login
+2025-03-24 05:44:48 - Secured GET /login
+2025-03-24 05:44:48 - GET "/login", parameters={}
+2025-03-24 05:44:48 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:48 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 05:44:48 - Completed 200 OK
+2025-03-24 05:44:48 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:48 - Securing GET /favicon.ico
+2025-03-24 05:44:48 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 05:44:48 - Redirecting to http://localhost:8080/login
+2025-03-24 05:44:48 - Securing GET /login
+2025-03-24 05:44:48 - Secured GET /login
+2025-03-24 05:44:48 - GET "/login", parameters={}
+2025-03-24 05:44:48 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 05:44:48 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 05:44:48 - Completed 200 OK
+2025-03-24 05:44:48 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:02:37 - Starting SpringBootSecurityDemoApplicationTests using Java 17.0.14 with PID 18880 (started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 06:02:37 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 06:02:37 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 06:02:37 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef
+2025-03-24 06:02:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 06:02:38 - Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2025-03-24 06:02:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 06:02:39 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 06:02:39 - HHH000026: Second-level cache disabled
+2025-03-24 06:02:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 06:02:40 - HikariPool-1 - Starting...
+2025-03-24 06:02:41 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28f90752
+2025-03-24 06:02:41 - HikariPool-1 - Start completed.
+2025-03-24 06:02:41 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 06:02:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 06:02:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:02:44 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:44 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:44 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:44 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:44 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:02:45 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 06:02:45 - Adding welcome page template: index
+2025-03-24 06:02:45 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 06:02:45 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 06:02:45 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 06:02:45 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 06:02:45 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 06:02:46 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 06:02:46 - Started SpringBootSecurityDemoApplicationTests in 9.237 seconds (process running for 10.689)
+2025-03-24 06:02:46 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 06:02:46 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 06:02:46 - База данных очищена.
+2025-03-24 06:02:46 - Начало инициализации данных...
+2025-03-24 06:02:46 - delete from users_roles where user_id=?
+2025-03-24 06:02:46 - delete from users_roles where user_id=?
+2025-03-24 06:02:46 - delete from users where id=?
+2025-03-24 06:02:46 - delete from users where id=?
+2025-03-24 06:02:46 - delete from roles where id=?
+2025-03-24 06:02:46 - delete from roles where id=?
+2025-03-24 06:02:46 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:02:46 - Роль ROLE_ADMIN не найдена, создаем новую...
+2025-03-24 06:02:46 - insert into roles (name) values (?)
+2025-03-24 06:02:46 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:02:46 - Роль ROLE_USER не найдена, создаем новую...
+2025-03-24 06:02:46 - insert into roles (name) values (?)
+2025-03-24 06:02:46 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:02:46 - Создание пользователя: admin
+2025-03-24 06:02:46 - insert into users (password,username) values (?,?)
+2025-03-24 06:02:46 - Пользователь admin успешно создан.
+2025-03-24 06:02:46 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:02:46 - Создание пользователя: user
+2025-03-24 06:02:46 - insert into users (password,username) values (?,?)
+2025-03-24 06:02:46 - Пользователь user успешно создан.
+2025-03-24 06:02:46 - Инициализация данных завершена.
+2025-03-24 06:02:46 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:02:46 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:02:46 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:02:47 - Session Metrics {
+    1445400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2024300 nanoseconds spent preparing 14 JDBC statements;
+    140988400 nanoseconds spent executing 10 JDBC statements;
+    80318300 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    35371400 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    4866500 nanoseconds spent executing 6 pre-partial-flushes;
+    98239200 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 06:02:47 - Closing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef, started on Mon Mar 24 06:02:37 SAMT 2025
+2025-03-24 06:02:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:02:47 - HikariPool-1 - Shutdown initiated...
+2025-03-24 06:02:47 - HikariPool-1 - Shutdown completed.
+2025-03-24 06:03:06 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24 06:03:06 - Graceful shutdown complete
+2025-03-24 06:03:06 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:03:06 - HikariPool-1 - Shutdown initiated...
+2025-03-24 06:03:06 - HikariPool-1 - Shutdown completed.
+2025-03-24 06:03:10 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 14196 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 06:03:10 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 06:03:10 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 06:03:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 06:03:11 - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2025-03-24 06:03:11 - Tomcat initialized with port 8080 (http)
+2025-03-24 06:03:11 - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-03-24 06:03:11 - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-03-24 06:03:12 - Starting service [Tomcat]
+2025-03-24 06:03:12 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24 06:03:12 - Initializing Spring embedded WebApplicationContext
+2025-03-24 06:03:12 - Root WebApplicationContext: initialization completed in 1509 ms
+2025-03-24 06:03:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 06:03:12 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 06:03:12 - HHH000026: Second-level cache disabled
+2025-03-24 06:03:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 06:03:12 - HikariPool-1 - Starting...
+2025-03-24 06:03:13 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4377ed24
+2025-03-24 06:03:13 - HikariPool-1 - Start completed.
+2025-03-24 06:03:13 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 06:03:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 06:03:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:03:15 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:15 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:15 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:16 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:16 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:16 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:16 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:16 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:16 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:03:16 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 06:03:16 - Adding welcome page template: index
+2025-03-24 06:03:16 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 06:03:16 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 06:03:16 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 06:03:16 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 06:03:16 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 06:03:16 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 06:03:16 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-24 06:03:16 - Started SpringBootSecurityDemoApplication in 6.969 seconds (process running for 8.227)
+2025-03-24 06:03:16 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 06:03:17 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 06:03:17 - Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕС‡РёС‰РµРЅР°.
+2025-03-24 06:03:17 - РќР°С‡Р°Р»Рѕ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґР°РЅРЅС‹С…...
+2025-03-24 06:03:17 - delete from users_roles where user_id=?
+2025-03-24 06:03:17 - delete from users_roles where user_id=?
+2025-03-24 06:03:17 - delete from users where id=?
+2025-03-24 06:03:17 - delete from users where id=?
+2025-03-24 06:03:17 - delete from roles where id=?
+2025-03-24 06:03:17 - delete from roles where id=?
+2025-03-24 06:03:17 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:03:17 - Р РѕР»СЊ ROLE_ADMIN РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 06:03:17 - insert into roles (name) values (?)
+2025-03-24 06:03:17 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:03:17 - Р РѕР»СЊ ROLE_USER РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 06:03:17 - insert into roles (name) values (?)
+2025-03-24 06:03:17 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:03:17 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: admin
+2025-03-24 06:03:17 - insert into users (password,username) values (?,?)
+2025-03-24 06:03:17 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ admin СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 06:03:17 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:03:17 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: user
+2025-03-24 06:03:17 - insert into users (password,username) values (?,?)
+2025-03-24 06:03:17 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ user СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 06:03:17 - РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С… Р·Р°РІРµСЂС€РµРЅР°.
+2025-03-24 06:03:17 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:03:17 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:03:17 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:03:17 - Session Metrics {
+    418300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1326900 nanoseconds spent preparing 14 JDBC statements;
+    29578100 nanoseconds spent executing 10 JDBC statements;
+    112173200 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5412500 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    3318400 nanoseconds spent executing 6 pre-partial-flushes;
+    149429500 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 06:03:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-24 06:03:38 - Initializing Servlet 'dispatcherServlet'
+2025-03-24 06:03:38 - Detected StandardServletMultipartResolver
+2025-03-24 06:03:38 - Detected AcceptHeaderLocaleResolver
+2025-03-24 06:03:38 - Detected FixedThemeResolver
+2025-03-24 06:03:38 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@665574fb
+2025-03-24 06:03:38 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5b5f06bb
+2025-03-24 06:03:38 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-24 06:03:38 - Completed initialization in 1 ms
+2025-03-24 06:03:38 - Securing GET /login
+2025-03-24 06:03:38 - Secured GET /login
+2025-03-24 06:03:38 - GET "/login", parameters={}
+2025-03-24 06:03:38 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:03:38 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 06:03:38 - Completed 200 OK
+2025-03-24 06:03:38 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:03:38 - Securing GET /favicon.ico
+2025-03-24 06:03:38 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:03:38 - Redirecting to http://localhost:8080/login
+2025-03-24 06:03:39 - Securing GET /login
+2025-03-24 06:03:39 - Secured GET /login
+2025-03-24 06:03:39 - GET "/login", parameters={}
+2025-03-24 06:03:39 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:03:39 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 06:03:39 - Completed 200 OK
+2025-03-24 06:03:39 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:03:49 - Securing GET /
+2025-03-24 06:03:49 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:03:49 - Saved request http://localhost:8080/?continue to session
+2025-03-24 06:03:49 - Redirecting to http://localhost:8080/login
+2025-03-24 06:03:49 - Securing GET /login
+2025-03-24 06:03:49 - Secured GET /login
+2025-03-24 06:03:49 - GET "/login", parameters={}
+2025-03-24 06:03:49 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:03:49 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 06:03:49 - Completed 200 OK
+2025-03-24 06:03:49 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:03:50 - Securing GET /favicon.ico
+2025-03-24 06:03:50 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:03:50 - Redirecting to http://localhost:8080/login
+2025-03-24 06:03:50 - Securing GET /login
+2025-03-24 06:03:50 - Secured GET /login
+2025-03-24 06:03:50 - GET "/login", parameters={}
+2025-03-24 06:03:50 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:03:50 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 06:03:50 - Completed 200 OK
+2025-03-24 06:03:50 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:04 - Securing GET /user
+2025-03-24 06:04:04 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:04 - Saved request http://localhost:8080/user?continue to session
+2025-03-24 06:04:04 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:04 - Securing GET /login
+2025-03-24 06:04:04 - Secured GET /login
+2025-03-24 06:04:04 - GET "/login", parameters={}
+2025-03-24 06:04:04 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:04 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 06:04:04 - Completed 200 OK
+2025-03-24 06:04:04 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:04 - Securing GET /favicon.ico
+2025-03-24 06:04:04 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:04 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:04 - Securing GET /login
+2025-03-24 06:04:04 - Secured GET /login
+2025-03-24 06:04:04 - GET "/login", parameters={}
+2025-03-24 06:04:04 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:04 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 06:04:04 - Completed 200 OK
+2025-03-24 06:04:04 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:16 - Securing GET /admin
+2025-03-24 06:04:16 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:16 - Saved request http://localhost:8080/admin?continue to session
+2025-03-24 06:04:16 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:16 - Securing GET /login
+2025-03-24 06:04:16 - Secured GET /login
+2025-03-24 06:04:16 - GET "/login", parameters={}
+2025-03-24 06:04:16 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:16 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 06:04:16 - Completed 200 OK
+2025-03-24 06:04:16 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:16 - Securing GET /favicon.ico
+2025-03-24 06:04:16 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:16 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:16 - Securing GET /login
+2025-03-24 06:04:16 - Secured GET /login
+2025-03-24 06:04:16 - GET "/login", parameters={}
+2025-03-24 06:04:16 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:16 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 06:04:16 - Completed 200 OK
+2025-03-24 06:04:16 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:30 - Securing POST /login
+2025-03-24 06:04:30 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:04:30 - Session Metrics {
+    658400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    781500 nanoseconds spent preparing 1 JDBC statements;
+    744200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:04:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: ru.kata.spring.boot_security.demo.models.User.roles: could not initialize proxy - no Session
+	at org.hibernate.collection.spi.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:635)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:219)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:614)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.read(AbstractPersistentCollection.java:138)
+	at org.hibernate.collection.spi.PersistentSet.iterator(PersistentSet.java:166)
+	at java.base/java.util.Spliterators$IteratorSpliterator.estimateSize(Spliterators.java:1865)
+	at java.base/java.util.Spliterator.getExactSizeIfKnown(Spliterator.java:414)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:508)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at ru.kata.spring.boot_security.demo.models.User.getAuthorities(User.java:42)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.createSuccessAuthentication(AbstractUserDetailsAuthenticationProvider.java:197)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(DaoAuthenticationProvider.java:141)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:168)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-03-24 06:04:30 - Securing POST /error
+2025-03-24 06:04:30 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:30 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:30 - Securing GET /login
+2025-03-24 06:04:30 - Secured GET /login
+2025-03-24 06:04:30 - GET "/login", parameters={}
+2025-03-24 06:04:30 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:30 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 06:04:30 - Completed 200 OK
+2025-03-24 06:04:30 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:30 - Securing GET /favicon.ico
+2025-03-24 06:04:30 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:30 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:30 - Securing GET /login
+2025-03-24 06:04:30 - Secured GET /login
+2025-03-24 06:04:30 - GET "/login", parameters={}
+2025-03-24 06:04:30 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:30 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 06:04:30 - Completed 200 OK
+2025-03-24 06:04:30 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:36 - Securing GET /
+2025-03-24 06:04:36 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:36 - Saved request http://localhost:8080/?continue to session
+2025-03-24 06:04:36 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:36 - Securing GET /login
+2025-03-24 06:04:36 - Secured GET /login
+2025-03-24 06:04:36 - GET "/login", parameters={}
+2025-03-24 06:04:36 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:36 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 06:04:36 - Completed 200 OK
+2025-03-24 06:04:36 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:36 - Securing GET /favicon.ico
+2025-03-24 06:04:36 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:36 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:36 - Securing GET /login
+2025-03-24 06:04:36 - Secured GET /login
+2025-03-24 06:04:36 - GET "/login", parameters={}
+2025-03-24 06:04:36 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:36 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 06:04:36 - Completed 200 OK
+2025-03-24 06:04:36 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:43 - Securing GET /
+2025-03-24 06:04:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:43 - Saved request http://localhost:8080/?continue to session
+2025-03-24 06:04:43 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:43 - Securing GET /login
+2025-03-24 06:04:43 - Secured GET /login
+2025-03-24 06:04:43 - GET "/login", parameters={}
+2025-03-24 06:04:43 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:43 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 06:04:43 - Completed 200 OK
+2025-03-24 06:04:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:43 - Securing GET /favicon.ico
+2025-03-24 06:04:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:04:43 - Redirecting to http://localhost:8080/login
+2025-03-24 06:04:43 - Securing GET /login
+2025-03-24 06:04:43 - Secured GET /login
+2025-03-24 06:04:43 - GET "/login", parameters={}
+2025-03-24 06:04:43 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 06:04:43 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 06:04:43 - Completed 200 OK
+2025-03-24 06:04:43 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 06:43:50 - Starting SpringBootSecurityDemoApplicationTests using Java 17.0.14 with PID 18692 (started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 06:43:50 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 06:43:50 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 06:43:50 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef
+2025-03-24 06:43:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 06:43:51 - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2025-03-24 06:43:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 06:43:52 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 06:43:52 - HHH000026: Second-level cache disabled
+2025-03-24 06:43:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 06:43:52 - HikariPool-1 - Starting...
+2025-03-24 06:43:53 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6921cfa
+2025-03-24 06:43:53 - HikariPool-1 - Start completed.
+2025-03-24 06:43:54 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 06:43:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 06:43:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:43:59 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 06:44:00 - Adding welcome page template: index
+2025-03-24 06:44:00 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 06:44:00 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 06:44:00 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 06:44:00 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 06:44:00 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 06:44:00 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 06:44:00 - Started SpringBootSecurityDemoApplicationTests in 11.141 seconds (process running for 12.608)
+2025-03-24 06:44:01 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 06:44:01 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 06:44:01 - База данных очищена.
+2025-03-24 06:44:01 - Начало инициализации данных...
+2025-03-24 06:44:01 - delete from users_roles where user_id=?
+2025-03-24 06:44:01 - delete from users_roles where user_id=?
+2025-03-24 06:44:01 - delete from users where id=?
+2025-03-24 06:44:01 - delete from users where id=?
+2025-03-24 06:44:01 - delete from roles where id=?
+2025-03-24 06:44:01 - delete from roles where id=?
+2025-03-24 06:44:01 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:44:01 - Роль ROLE_ADMIN не найдена, создаем новую...
+2025-03-24 06:44:01 - insert into roles (name) values (?)
+2025-03-24 06:44:01 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:44:01 - Роль ROLE_USER не найдена, создаем новую...
+2025-03-24 06:44:01 - insert into roles (name) values (?)
+2025-03-24 06:44:01 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:44:01 - Создание пользователя: admin
+2025-03-24 06:44:01 - insert into users (password,username) values (?,?)
+2025-03-24 06:44:01 - Пользователь admin успешно создан.
+2025-03-24 06:44:01 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:44:01 - Создание пользователя: user
+2025-03-24 06:44:01 - insert into users (password,username) values (?,?)
+2025-03-24 06:44:01 - Пользователь user успешно создан.
+2025-03-24 06:44:01 - Инициализация данных завершена.
+2025-03-24 06:44:01 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:44:01 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:44:01 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:44:01 - Session Metrics {
+    551100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2293400 nanoseconds spent preparing 14 JDBC statements;
+    29210000 nanoseconds spent executing 10 JDBC statements;
+    168845100 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    8827500 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    4691300 nanoseconds spent executing 6 pre-partial-flushes;
+    218732700 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 06:44:02 - Closing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef, started on Mon Mar 24 06:43:50 SAMT 2025
+2025-03-24 06:44:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:44:02 - HikariPool-1 - Shutdown initiated...
+2025-03-24 06:44:02 - HikariPool-1 - Shutdown completed.
+2025-03-24 06:44:31 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 5496 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 06:44:31 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 06:44:31 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 06:44:31 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 06:44:31 - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2025-03-24 06:44:32 - Tomcat initialized with port 8080 (http)
+2025-03-24 06:44:32 - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-03-24 06:44:32 - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-03-24 06:44:32 - Starting service [Tomcat]
+2025-03-24 06:44:32 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24 06:44:32 - Initializing Spring embedded WebApplicationContext
+2025-03-24 06:44:32 - Root WebApplicationContext: initialization completed in 1496 ms
+2025-03-24 06:44:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 06:44:32 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 06:44:32 - HHH000026: Second-level cache disabled
+2025-03-24 06:44:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 06:44:33 - HikariPool-1 - Starting...
+2025-03-24 06:44:33 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a7db5a
+2025-03-24 06:44:33 - HikariPool-1 - Start completed.
+2025-03-24 06:44:33 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 06:44:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 06:44:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:44:36 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 06:44:36 - Adding welcome page template: index
+2025-03-24 06:44:36 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 06:44:36 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 06:44:36 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 06:44:36 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 06:44:36 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 06:44:36 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 06:44:36 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-24 06:44:36 - Started SpringBootSecurityDemoApplication in 6.279 seconds (process running for 8.29)
+2025-03-24 06:44:37 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 06:44:37 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 06:44:37 - Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕС‡РёС‰РµРЅР°.
+2025-03-24 06:44:37 - РќР°С‡Р°Р»Рѕ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґР°РЅРЅС‹С…...
+2025-03-24 06:44:37 - delete from users_roles where user_id=?
+2025-03-24 06:44:37 - delete from users_roles where user_id=?
+2025-03-24 06:44:37 - delete from users where id=?
+2025-03-24 06:44:37 - delete from users where id=?
+2025-03-24 06:44:37 - delete from roles where id=?
+2025-03-24 06:44:37 - delete from roles where id=?
+2025-03-24 06:44:37 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:44:37 - Р РѕР»СЊ ROLE_ADMIN РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 06:44:37 - insert into roles (name) values (?)
+2025-03-24 06:44:37 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:44:37 - Р РѕР»СЊ ROLE_USER РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 06:44:37 - insert into roles (name) values (?)
+2025-03-24 06:44:37 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:44:37 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: admin
+2025-03-24 06:44:37 - insert into users (password,username) values (?,?)
+2025-03-24 06:44:37 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ admin СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 06:44:37 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:44:37 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: user
+2025-03-24 06:44:37 - insert into users (password,username) values (?,?)
+2025-03-24 06:44:37 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ user СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 06:44:37 - РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С… Р·Р°РІРµСЂС€РµРЅР°.
+2025-03-24 06:44:37 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:44:37 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:44:37 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:44:37 - Session Metrics {
+    431700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1517100 nanoseconds spent preparing 14 JDBC statements;
+    7542200 nanoseconds spent executing 10 JDBC statements;
+    63135300 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6172200 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    3449400 nanoseconds spent executing 6 pre-partial-flushes;
+    87881700 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 06:57:57 - Starting SpringBootSecurityDemoApplicationTests using Java 17.0.14 with PID 18300 (started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 06:57:57 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 06:57:57 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 06:57:57 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef
+2025-03-24 06:57:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 06:57:59 - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2025-03-24 06:57:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 06:57:59 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 06:58:00 - HHH000026: Second-level cache disabled
+2025-03-24 06:58:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 06:58:00 - HikariPool-1 - Starting...
+2025-03-24 06:58:02 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28f90752
+2025-03-24 06:58:02 - HikariPool-1 - Start completed.
+2025-03-24 06:58:03 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 06:58:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 06:58:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:58:06 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 06:58:06 - Adding welcome page template: index
+2025-03-24 06:58:07 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 06:58:07 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 06:58:07 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 06:58:07 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 06:58:07 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 06:58:07 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 06:58:08 - Started SpringBootSecurityDemoApplicationTests in 10.796 seconds (process running for 12.323)
+2025-03-24 06:58:08 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 06:58:08 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 06:58:08 - База данных очищена.
+2025-03-24 06:58:08 - Начало инициализации данных...
+2025-03-24 06:58:08 - delete from users_roles where user_id=?
+2025-03-24 06:58:08 - delete from users_roles where user_id=?
+2025-03-24 06:58:09 - delete from users where id=?
+2025-03-24 06:58:09 - delete from users where id=?
+2025-03-24 06:58:09 - delete from roles where id=?
+2025-03-24 06:58:09 - delete from roles where id=?
+2025-03-24 06:58:09 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:58:09 - Роль ROLE_ADMIN не найдена, создаем новую...
+2025-03-24 06:58:09 - insert into roles (name) values (?)
+2025-03-24 06:58:09 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:58:09 - Роль ROLE_USER не найдена, создаем новую...
+2025-03-24 06:58:09 - insert into roles (name) values (?)
+2025-03-24 06:58:09 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:58:09 - Создание пользователя: admin
+2025-03-24 06:58:09 - insert into users (password,username) values (?,?)
+2025-03-24 06:58:09 - Пользователь admin успешно создан.
+2025-03-24 06:58:09 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:58:09 - Создание пользователя: user
+2025-03-24 06:58:09 - insert into users (password,username) values (?,?)
+2025-03-24 06:58:09 - Пользователь user успешно создан.
+2025-03-24 06:58:09 - Инициализация данных завершена.
+2025-03-24 06:58:09 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:58:09 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:58:09 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:58:09 - Session Metrics {
+    1065300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1855700 nanoseconds spent preparing 14 JDBC statements;
+    331881300 nanoseconds spent executing 10 JDBC statements;
+    366798600 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    10151900 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    4860200 nanoseconds spent executing 6 pre-partial-flushes;
+    418390100 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 06:58:10 - Closing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef, started on Mon Mar 24 06:57:57 SAMT 2025
+2025-03-24 06:58:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:58:10 - HikariPool-1 - Shutdown initiated...
+2025-03-24 06:58:10 - HikariPool-1 - Shutdown completed.
+2025-03-24 06:59:01 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24 06:59:01 - Graceful shutdown complete
+2025-03-24 06:59:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:59:02 - HikariPool-1 - Shutdown initiated...
+2025-03-24 06:59:02 - HikariPool-1 - Shutdown completed.
+2025-03-24 06:59:13 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 17004 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 06:59:13 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 06:59:13 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 06:59:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 06:59:14 - Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2025-03-24 06:59:15 - Tomcat initialized with port 8080 (http)
+2025-03-24 06:59:15 - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-03-24 06:59:15 - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-03-24 06:59:15 - Starting service [Tomcat]
+2025-03-24 06:59:15 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24 06:59:15 - Initializing Spring embedded WebApplicationContext
+2025-03-24 06:59:15 - Root WebApplicationContext: initialization completed in 1633 ms
+2025-03-24 06:59:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 06:59:15 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 06:59:15 - HHH000026: Second-level cache disabled
+2025-03-24 06:59:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 06:59:16 - HikariPool-1 - Starting...
+2025-03-24 06:59:16 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@407f2029
+2025-03-24 06:59:16 - HikariPool-1 - Start completed.
+2025-03-24 06:59:16 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 06:59:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 06:59:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 06:59:19 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 06:59:19 - Adding welcome page template: index
+2025-03-24 06:59:19 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 06:59:19 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 06:59:19 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 06:59:19 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 06:59:19 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 06:59:19 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 06:59:19 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-24 06:59:19 - Started SpringBootSecurityDemoApplication in 7.035 seconds (process running for 8.317)
+2025-03-24 06:59:20 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 06:59:20 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 06:59:20 - Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕС‡РёС‰РµРЅР°.
+2025-03-24 06:59:20 - РќР°С‡Р°Р»Рѕ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґР°РЅРЅС‹С…...
+2025-03-24 06:59:20 - delete from users_roles where user_id=?
+2025-03-24 06:59:20 - delete from users_roles where user_id=?
+2025-03-24 06:59:20 - delete from users where id=?
+2025-03-24 06:59:20 - delete from users where id=?
+2025-03-24 06:59:20 - delete from roles where id=?
+2025-03-24 06:59:20 - delete from roles where id=?
+2025-03-24 06:59:20 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:59:20 - Р РѕР»СЊ ROLE_ADMIN РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 06:59:20 - insert into roles (name) values (?)
+2025-03-24 06:59:20 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 06:59:20 - Р РѕР»СЊ ROLE_USER РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 06:59:20 - insert into roles (name) values (?)
+2025-03-24 06:59:20 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:59:20 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: admin
+2025-03-24 06:59:20 - insert into users (password,username) values (?,?)
+2025-03-24 06:59:20 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ admin СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 06:59:20 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 06:59:20 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: user
+2025-03-24 06:59:20 - insert into users (password,username) values (?,?)
+2025-03-24 06:59:20 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ user СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 06:59:20 - РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С… Р·Р°РІРµСЂС€РµРЅР°.
+2025-03-24 06:59:20 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:59:20 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:59:20 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 06:59:20 - Session Metrics {
+    436800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1601100 nanoseconds spent preparing 14 JDBC statements;
+    55362900 nanoseconds spent executing 10 JDBC statements;
+    135727900 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5964500 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    4463300 nanoseconds spent executing 6 pre-partial-flushes;
+    174604100 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 07:12:38 - Starting SpringBootSecurityDemoApplicationTests using Java 17.0.14 with PID 19072 (started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 07:12:38 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 07:12:38 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 07:12:38 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef
+2025-03-24 07:12:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 07:12:40 - Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2025-03-24 07:12:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 07:12:40 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 07:12:41 - HHH000026: Second-level cache disabled
+2025-03-24 07:12:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 07:12:41 - HikariPool-1 - Starting...
+2025-03-24 07:12:42 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@793d09e
+2025-03-24 07:12:42 - HikariPool-1 - Start completed.
+2025-03-24 07:12:43 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 07:12:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 07:12:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:12:45 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 07:12:45 - Adding welcome page template: index
+2025-03-24 07:12:45 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 07:12:45 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 07:12:45 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 07:12:45 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 07:12:46 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 07:12:46 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 07:12:46 - Started SpringBootSecurityDemoApplicationTests in 8.191 seconds (process running for 9.553)
+2025-03-24 07:12:46 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 07:12:46 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 07:12:46 - База данных очищена.
+2025-03-24 07:12:46 - Начало инициализации данных...
+2025-03-24 07:12:46 - delete from users_roles where user_id=?
+2025-03-24 07:12:46 - delete from users_roles where user_id=?
+2025-03-24 07:12:47 - delete from users where id=?
+2025-03-24 07:12:47 - delete from users where id=?
+2025-03-24 07:12:47 - delete from roles where id=?
+2025-03-24 07:12:47 - delete from roles where id=?
+2025-03-24 07:12:47 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:12:47 - Роль ROLE_ADMIN не найдена, создаем новую...
+2025-03-24 07:12:47 - insert into roles (name) values (?)
+2025-03-24 07:12:47 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:12:47 - Роль ROLE_USER не найдена, создаем новую...
+2025-03-24 07:12:47 - insert into roles (name) values (?)
+2025-03-24 07:12:47 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:12:47 - Создание пользователя: admin
+2025-03-24 07:12:47 - insert into users (password,username) values (?,?)
+2025-03-24 07:12:47 - Пользователь admin успешно создан.
+2025-03-24 07:12:47 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:12:47 - Создание пользователя: user
+2025-03-24 07:12:47 - insert into users (password,username) values (?,?)
+2025-03-24 07:12:47 - Пользователь user успешно создан.
+2025-03-24 07:12:47 - Инициализация данных завершена.
+2025-03-24 07:12:47 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:12:47 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:12:47 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:12:47 - Session Metrics {
+    774600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2275100 nanoseconds spent preparing 14 JDBC statements;
+    177051100 nanoseconds spent executing 10 JDBC statements;
+    319012900 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6232300 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    5769700 nanoseconds spent executing 6 pre-partial-flushes;
+    360552700 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 07:12:48 - Closing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef, started on Mon Mar 24 07:12:38 SAMT 2025
+2025-03-24 07:12:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:12:48 - HikariPool-1 - Shutdown initiated...
+2025-03-24 07:12:48 - HikariPool-1 - Shutdown completed.
+2025-03-24 07:13:22 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24 07:13:23 - Graceful shutdown complete
+2025-03-24 07:13:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:13:23 - HikariPool-1 - Shutdown initiated...
+2025-03-24 07:13:23 - HikariPool-1 - Shutdown completed.
+2025-03-24 07:13:33 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 14172 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 07:13:33 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 07:13:33 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 07:13:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 07:13:34 - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2025-03-24 07:13:34 - Tomcat initialized with port 8080 (http)
+2025-03-24 07:13:34 - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-03-24 07:13:34 - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-03-24 07:13:34 - Starting service [Tomcat]
+2025-03-24 07:13:34 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24 07:13:34 - Initializing Spring embedded WebApplicationContext
+2025-03-24 07:13:34 - Root WebApplicationContext: initialization completed in 1481 ms
+2025-03-24 07:13:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 07:13:35 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 07:13:35 - HHH000026: Second-level cache disabled
+2025-03-24 07:13:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 07:13:35 - HikariPool-1 - Starting...
+2025-03-24 07:13:36 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44a14de0
+2025-03-24 07:13:36 - HikariPool-1 - Start completed.
+2025-03-24 07:13:36 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 07:13:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 07:13:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:13:38 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 07:13:38 - Adding welcome page template: index
+2025-03-24 07:13:38 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 07:13:38 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 07:13:39 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 07:13:39 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 07:13:39 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 07:13:39 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 07:13:39 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-24 07:13:39 - Started SpringBootSecurityDemoApplication in 6.522 seconds (process running for 7.93)
+2025-03-24 07:13:39 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 07:13:39 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 07:13:39 - Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕС‡РёС‰РµРЅР°.
+2025-03-24 07:13:39 - РќР°С‡Р°Р»Рѕ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґР°РЅРЅС‹С…...
+2025-03-24 07:13:39 - delete from users_roles where user_id=?
+2025-03-24 07:13:39 - delete from users_roles where user_id=?
+2025-03-24 07:13:39 - delete from users where id=?
+2025-03-24 07:13:39 - delete from users where id=?
+2025-03-24 07:13:39 - delete from roles where id=?
+2025-03-24 07:13:39 - delete from roles where id=?
+2025-03-24 07:13:39 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:13:39 - Р РѕР»СЊ ROLE_ADMIN РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 07:13:39 - insert into roles (name) values (?)
+2025-03-24 07:13:39 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:13:39 - Р РѕР»СЊ ROLE_USER РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 07:13:39 - insert into roles (name) values (?)
+2025-03-24 07:13:39 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:13:39 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: admin
+2025-03-24 07:13:39 - insert into users (password,username) values (?,?)
+2025-03-24 07:13:39 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ admin СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 07:13:39 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:13:39 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: user
+2025-03-24 07:13:39 - insert into users (password,username) values (?,?)
+2025-03-24 07:13:39 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ user СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 07:13:39 - РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С… Р·Р°РІРµСЂС€РµРЅР°.
+2025-03-24 07:13:39 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:13:39 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:13:39 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:13:39 - Session Metrics {
+    468100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1264800 nanoseconds spent preparing 14 JDBC statements;
+    38798200 nanoseconds spent executing 10 JDBC statements;
+    87429300 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5670500 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    3354600 nanoseconds spent executing 6 pre-partial-flushes;
+    115300500 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 07:14:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-24 07:14:20 - Initializing Servlet 'dispatcherServlet'
+2025-03-24 07:14:20 - Detected StandardServletMultipartResolver
+2025-03-24 07:14:20 - Detected AcceptHeaderLocaleResolver
+2025-03-24 07:14:20 - Detected FixedThemeResolver
+2025-03-24 07:14:20 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@457dc809
+2025-03-24 07:14:20 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@56f4f385
+2025-03-24 07:14:20 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-24 07:14:20 - Completed initialization in 1 ms
+2025-03-24 07:14:20 - Securing POST /login
+2025-03-24 07:14:21 - Invalid CSRF token found for http://localhost:8080/login
+2025-03-24 07:14:21 - Responding with 403 status code
+2025-03-24 07:14:21 - Securing POST /error
+2025-03-24 07:14:21 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:14:21 - Redirecting to http://localhost:8080/login
+2025-03-24 07:14:21 - Securing GET /login
+2025-03-24 07:14:21 - Secured GET /login
+2025-03-24 07:14:21 - GET "/login", parameters={}
+2025-03-24 07:14:21 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 07:14:21 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 07:14:21 - Completed 200 OK
+2025-03-24 07:14:21 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:14:23 - Securing GET /favicon.ico
+2025-03-24 07:14:23 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:14:23 - Redirecting to http://localhost:8080/login
+2025-03-24 07:14:23 - Securing GET /login
+2025-03-24 07:14:23 - Secured GET /login
+2025-03-24 07:14:23 - GET "/login", parameters={}
+2025-03-24 07:14:23 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 07:14:23 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 07:14:23 - Completed 200 OK
+2025-03-24 07:14:23 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:14:25 - Securing GET /
+2025-03-24 07:14:25 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:14:25 - Saved request http://localhost:8080/?continue to session
+2025-03-24 07:14:25 - Redirecting to http://localhost:8080/login
+2025-03-24 07:14:25 - Securing GET /login
+2025-03-24 07:14:25 - Secured GET /login
+2025-03-24 07:14:25 - GET "/login", parameters={}
+2025-03-24 07:14:25 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 07:14:25 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-03-24 07:14:25 - Completed 200 OK
+2025-03-24 07:14:25 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:14:26 - Securing GET /favicon.ico
+2025-03-24 07:14:26 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:14:26 - Redirecting to http://localhost:8080/login
+2025-03-24 07:14:26 - Securing GET /login
+2025-03-24 07:14:26 - Secured GET /login
+2025-03-24 07:14:26 - GET "/login", parameters={}
+2025-03-24 07:14:26 - Mapped to ParameterizableViewController [view="login"]
+2025-03-24 07:14:26 - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2025-03-24 07:14:26 - Completed 200 OK
+2025-03-24 07:14:26 - Set SecurityContextHolder to anonymous SecurityContext
+2025-03-24 07:26:42 - Starting SpringBootSecurityDemoApplicationTests using Java 17.0.14 with PID 10988 (started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 07:26:42 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 07:26:42 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 07:26:42 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef
+2025-03-24 07:26:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 07:26:44 - Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2025-03-24 07:26:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 07:26:44 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 07:26:44 - HHH000026: Second-level cache disabled
+2025-03-24 07:26:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 07:26:45 - HikariPool-1 - Starting...
+2025-03-24 07:26:46 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a105556
+2025-03-24 07:26:46 - HikariPool-1 - Start completed.
+2025-03-24 07:26:47 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 07:26:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 07:26:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:26:50 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 07:26:50 - Adding welcome page template: index
+2025-03-24 07:26:50 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 07:26:50 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 07:26:50 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 07:26:51 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 07:26:51 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 07:26:51 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 07:26:51 - Started SpringBootSecurityDemoApplicationTests in 8.948 seconds (process running for 10.38)
+2025-03-24 07:26:51 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 07:26:51 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 07:26:51 - База данных очищена.
+2025-03-24 07:26:51 - Начало инициализации данных...
+2025-03-24 07:26:51 - delete from users_roles where user_id=?
+2025-03-24 07:26:51 - delete from users_roles where user_id=?
+2025-03-24 07:26:52 - delete from users where id=?
+2025-03-24 07:26:52 - delete from users where id=?
+2025-03-24 07:26:52 - delete from roles where id=?
+2025-03-24 07:26:52 - delete from roles where id=?
+2025-03-24 07:26:52 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:26:52 - Роль ROLE_ADMIN не найдена, создаем новую...
+2025-03-24 07:26:52 - insert into roles (name) values (?)
+2025-03-24 07:26:52 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:26:52 - Роль ROLE_USER не найдена, создаем новую...
+2025-03-24 07:26:52 - insert into roles (name) values (?)
+2025-03-24 07:26:52 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:26:52 - Создание пользователя: admin
+2025-03-24 07:26:52 - insert into users (password,username) values (?,?)
+2025-03-24 07:26:52 - Пользователь admin успешно создан.
+2025-03-24 07:26:52 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:26:52 - Создание пользователя: user
+2025-03-24 07:26:52 - insert into users (password,username) values (?,?)
+2025-03-24 07:26:52 - Пользователь user успешно создан.
+2025-03-24 07:26:52 - Инициализация данных завершена.
+2025-03-24 07:26:52 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:26:52 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:26:52 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:26:52 - Session Metrics {
+    697800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1669300 nanoseconds spent preparing 14 JDBC statements;
+    171463400 nanoseconds spent executing 10 JDBC statements;
+    254952800 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7909400 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    4736500 nanoseconds spent executing 6 pre-partial-flushes;
+    298615800 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}
+2025-03-24 07:26:53 - Closing org.springframework.web.context.support.GenericWebApplicationContext@710b30ef, started on Mon Mar 24 07:26:42 SAMT 2025
+2025-03-24 07:26:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:26:53 - HikariPool-1 - Shutdown initiated...
+2025-03-24 07:26:53 - HikariPool-1 - Shutdown completed.
+2025-03-24 07:27:21 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24 07:27:22 - Graceful shutdown complete
+2025-03-24 07:27:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:27:24 - HikariPool-1 - Shutdown initiated...
+2025-03-24 07:27:25 - HikariPool-1 - Shutdown completed.
+2025-03-24 07:27:41 - Starting SpringBootSecurityDemoApplication using Java 17.0.14 with PID 11452 (C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security\target\classes started by Amina in C:\Users\Ami\IdeaProjects\PP_3_1_2_Boot_Security)
+2025-03-24 07:27:41 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 07:27:41 - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 07:27:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24 07:27:42 - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2025-03-24 07:27:42 - Tomcat initialized with port 8080 (http)
+2025-03-24 07:27:42 - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-03-24 07:27:42 - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-03-24 07:27:42 - Starting service [Tomcat]
+2025-03-24 07:27:42 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24 07:27:42 - Initializing Spring embedded WebApplicationContext
+2025-03-24 07:27:42 - Root WebApplicationContext: initialization completed in 1468 ms
+2025-03-24 07:27:42 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24 07:27:43 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24 07:27:43 - HHH000026: Second-level cache disabled
+2025-03-24 07:27:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24 07:27:43 - HikariPool-1 - Starting...
+2025-03-24 07:27:43 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d0a2c82
+2025-03-24 07:27:43 - HikariPool-1 - Start completed.
+2025-03-24 07:27:44 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24 07:27:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24 07:27:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-03-24 07:27:46 - Global AuthenticationManager configured with UserDetailsService bean with name userServiceImplDetails
+2025-03-24 07:27:46 - Adding welcome page template: index
+2025-03-24 07:27:46 - 8 mappings in 'requestMappingHandlerMapping'
+2025-03-24 07:27:46 - Patterns [/, /admin, /user, /login, /edit-user, /403] in 'viewControllerHandlerMapping'
+2025-03-24 07:27:46 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-24 07:27:46 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-24 07:27:46 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-24 07:27:46 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-24 07:27:46 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-24 07:27:46 - Started SpringBootSecurityDemoApplication in 6.187 seconds (process running for 7.409)
+2025-03-24 07:27:47 - select u1_0.id,u1_0.password,u1_0.username from users u1_0
+2025-03-24 07:27:47 - select r1_0.id,r1_0.name from roles r1_0
+2025-03-24 07:27:47 - Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕС‡РёС‰РµРЅР°.
+2025-03-24 07:27:47 - РќР°С‡Р°Р»Рѕ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґР°РЅРЅС‹С…...
+2025-03-24 07:27:47 - delete from users_roles where user_id=?
+2025-03-24 07:27:47 - delete from users_roles where user_id=?
+2025-03-24 07:27:47 - delete from users where id=?
+2025-03-24 07:27:47 - delete from users where id=?
+2025-03-24 07:27:47 - delete from roles where id=?
+2025-03-24 07:27:47 - delete from roles where id=?
+2025-03-24 07:27:47 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:27:47 - Р РѕР»СЊ ROLE_ADMIN РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 07:27:47 - insert into roles (name) values (?)
+2025-03-24 07:27:47 - select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2025-03-24 07:27:47 - Р РѕР»СЊ ROLE_USER РЅРµ РЅР°Р№РґРµРЅР°, СЃРѕР·РґР°РµРј РЅРѕРІСѓСЋ...
+2025-03-24 07:27:47 - insert into roles (name) values (?)
+2025-03-24 07:27:47 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:27:47 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: admin
+2025-03-24 07:27:47 - insert into users (password,username) values (?,?)
+2025-03-24 07:27:47 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ admin СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 07:27:47 - select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-03-24 07:27:47 - РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: user
+2025-03-24 07:27:47 - insert into users (password,username) values (?,?)
+2025-03-24 07:27:47 - РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ user СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.
+2025-03-24 07:27:47 - РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С… Р·Р°РІРµСЂС€РµРЅР°.
+2025-03-24 07:27:47 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:27:47 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:27:47 - insert into users_roles (user_id,role_id) values (?,?)
+2025-03-24 07:27:47 - Session Metrics {
+    420800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1393000 nanoseconds spent preparing 14 JDBC statements;
+    38981500 nanoseconds spent executing 10 JDBC statements;
+    136561700 nanoseconds spent executing 4 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5202400 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 2 collections);
+    3269300 nanoseconds spent executing 6 pre-partial-flushes;
+    170428100 nanoseconds spent executing 6 partial-flushes (flushing a total of 12 entities and 12 collections)
+}

@@ -3,12 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Редактирование пользователя</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .error-input {
+            border: 2px solid red;
+        }
+
+        .error-message {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var errorMessage = document.getElementById("error-message");
+            var isValid = true;
+
+            // Сброс стилей ошибок
+            document.getElementById("username").classList.remove("error-input");
+            document.getElementById("password").classList.remove("error-input");
+            errorMessage.innerHTML = "";
+
+            // Проверка поля name
+            if (name.trim() === "") {
+                document.getElementById("username").classList.add("error-input");
+                errorMessage.innerHTML += "Имя обязательно для заполнения<br>";
+                isValid = false;
+            }
+
+            // Проверка поля password
+            if (password.trim() === "") {
+                document.getElementById("password").classList.add("error-input");
+                errorMessage.innerHTML += "Пароль обязателен для заполнения<br>";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
 </head>
 <body>
 <h1>Редактирование пользователя</h1>
 
 <!-- Форма для редактирования пользователя -->
-<form th:action="@{/admin/save}" th:object="${user}" method="post">
+<form th:action="@{/admin/save}" th:object="${user}" method="post" onsubmit="return validateForm()">
     <!-- Скрытое поле для ID пользователя -->
     <input type="hidden" th:field="*{id}">
 
@@ -38,5 +79,8 @@
 <!-- Ссылки для навигации -->
 <a th:href="@{/admin}">Назад к списку пользователей</a>
 <a th:href="@{/}">На главную</a>
+
+<!-- Отображение сообщений об ошибках -->
+<div id="error-message" class="error-message"></div>
 </body>
 </html>
