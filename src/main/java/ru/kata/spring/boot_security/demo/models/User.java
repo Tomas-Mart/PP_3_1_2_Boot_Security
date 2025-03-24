@@ -1,64 +1,74 @@
 package ru.kata.spring.boot_security.demo.models;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import lombok.EqualsAndHashCode;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Entity
-@Table(name = "users")
-@Getter // Автоматически генерирует геттеры для всех полей
-@Setter // Автоматически генерирует сеттеры для всех полей
-@ToString // Автоматически генерирует метод toString()
-@EqualsAndHashCode // Автоматически генерирует методы equals() и hashCode()
+@Data // Автоматически генерирует геттеры, сеттеры, toString, equals и hashCode
 @NoArgsConstructor // Автоматически генерирует конструктор без аргументов
 @AllArgsConstructor // Автоматически генерирует конструктор со всеми аргументами
+@Table(name = "users")
 public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "username")
+    @Column(name = "username", unique = true, nullable = false)
     private String username;
 
-    @Column(name = "password")
+    @Column(name = "password", nullable = false)
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @JoinTable(name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return roles;
+        return roles.stream()
+                .map(role -> new SimpleGrantedAuthority(role.getName()))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return true;
+        return true; // Логика для проверки, не истек ли срок действия аккаунта
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return true;
+        return true; // Логика для проверки, не заблокирован ли аккаунт
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return true;
+        return true; // Логика для проверки, не истек ли срок действия учетных данных
     }
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return true; // Логика для проверки, активен ли аккаунт
     }
 }

@@ -6,24 +6,25 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.kata.spring.boot_security.demo.models.User;
+import ru.kata.spring.boot_security.demo.services.UserService;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
-    @GetMapping("/")
-    public String index() {
-        return "index";
+    private final UserService userService;
+
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
-    @GetMapping("/login")
-    public String login() {
-        return "login";
-    }
+    @GetMapping
+    public String getUserPage(@AuthenticationPrincipal User currentUser, Model model) {
+        // Получаем текущего пользователя по его имени
+        User user = userService.findByUsername(currentUser.getUsername());
 
-    @GetMapping("/user")
-    public String getUserPage(@AuthenticationPrincipal User user, Model model) {
+        // Добавляем пользователя в модель
         model.addAttribute("user", user);
-        return "user";
+        return "user"; // Возвращаем имя представления (view)
     }
 }

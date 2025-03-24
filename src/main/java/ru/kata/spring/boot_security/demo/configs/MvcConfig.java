@@ -8,8 +8,20 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("index"); // Главная страница
+        // Главная страница
+        registry.addViewController("/").setViewName("index");
+
+        // Страницы для администратора и пользователя
         registry.addViewController("/admin").setViewName("admin");
         registry.addViewController("/user").setViewName("user");
+
+        // Страница логина
+        registry.addViewController("/login").setViewName("login");
+
+        // Страница редактирования пользователя
+        registry.addViewController("/edit-user").setViewName("edit-user");
+
+        // Страница ошибки 403 (доступ запрещен)
+        registry.addViewController("/403").setViewName("403");
     }
 }

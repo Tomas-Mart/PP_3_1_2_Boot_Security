@@ -22,10 +22,9 @@ public class WebSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/", "/index").permitAll() // Разрешить доступ всем
-                        .requestMatchers("/admin/**").hasRole("ADMIN") // Только для ADMIN
-                        .requestMatchers("/user").hasAnyRole("USER", "ADMIN") // Для USER и ADMIN
-                        .anyRequest().authenticated() // Все остальные запросы требуют аутентификации
+                        .requestMatchers("/admin/**").hasRole("ADMIN") // Доступ только для ADMIN
+                        .requestMatchers("/user").hasAnyRole("USER", "ADMIN") // Доступ для USER и ADMIN
+                        .anyRequest().denyAll() // Все остальные URL запрещены
                 )
                 .formLogin(form -> form
                         .loginPage("/login") // Страница логина
